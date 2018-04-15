@@ -11,19 +11,19 @@
         <div class="top-menu__wrapper">
           <ul class="top-menu__list">
             <li class="top-menu__item">
-              <img src="http://placehold.it/75x22" alt="Логотип PINK" width="75" height="22">
+              <img class="top-menu__img" src="http://placehold.it/75x22" alt="Логотип PINK" width="75" height="22">
             </li>
             <li class="top-menu__item">
-              <a href="index.html">Главная</a>
+              <a class="top-menu__link" href="index.html">Главная</a>
             </li>
             <li class="top-menu__item">
-              <a>Фотографии</a>
+              <a class="top-menu__link" href="photo.html">Фотографии</a>
             </li>
             <li class="top-menu__item">
-              <a href="#">Конкурс</a>
+              <a class="top-menu__link">Конкурс</a>
             </li>
             <li class="top-menu__item">
-              <a href="#">Html Academy</a>
+              <a class="top-menu__link" href="#">Html Academy</a>
             </li>
           </ul>
         </div>
@@ -123,8 +123,8 @@
           </div>
           <div class="form__amotions amotions">
             <fieldset class="amotions__fieldset">
-              <legend>Опишите свои эмоции</legend>
-              <textarea name="amotions__area" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              <legend class="amotions__legend">Опишите свои эмоции</legend>
+              <textarea class="amotions__area" name="amotions__area" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </fieldset>
           </div>
           <button class="form__button" type="submit">Отправить форму</button>
@@ -133,8 +133,10 @@
     </main>
     <footer class="footer">
       <section class="footer__logo logo">
-        <a href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="http://placehold.it/45x30" alt="Логотип PINK">
+        <a class="logo__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <div class="logo__img-wrapper">
+            <img class="logo__img" src="http://placehold.it/45x30" alt="Логотип PINK">
+          </div>
         </a>
       </section>
       <section class="socials">
