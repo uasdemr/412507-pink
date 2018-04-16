@@ -35,14 +35,14 @@
         <h2 class="visually-hidden">Приложения для телефонов на разных операционных системах</h2>
         <img class="applets__phone" src="http://placehold.it/320x395" alt="Телефон">
         <a href="#" class="applets__link">Скачать приложение</a>
-        <ul class="applets-list">
-          <li class="applets-list__item">
+        <ul class="applets__list">
+          <li class="applets__item">
             <img src="http://placehold.it/45x45" alt="iPhone" width="47" height="56">
           </li>
-          <li class="applets-list__item">
+          <li class="applets__item">
             <img src="http://placehold.it/45x45" alt="Android" width="43" height="47">
           </li>
-          <li class="applets-list__item">
+          <li class="applets__item">
             <img src="http://placehold.it/45x45" alt="Windows Phone" width="44" height="41">
           </li>
         </ul>
@@ -80,7 +80,7 @@
             Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
           </p>
         </article>
-        <div class="img-container">
+        <div class="information__img-container">
           <img class="information__img" src="http://placehold.it/157x300" alt="Телефон со смайликом">
         </div>
       </section>
@@ -189,9 +189,7 @@
           <button class="slider__toggle" type="button">3</button>
         </p>
       </section>
-    </main>
-    <footer class="footer">
-      <section class="footer__contacts contacts">
+      <section class="contacts">
         <div class="contacts__title-wrapper">
           <p class="contacts__title">
             Остались вопросы?
@@ -224,33 +222,35 @@
             </span>
           </p>
         </div>
-        <div class="map">
+        <div class="contacts__map">
           <img src="http://placehold.it/320x200" alt="Карта" width="320" height="200">
         </div>
       </section>
-      <section class="footer__logo logo">
-        <a class="logo__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <div class="logo__img-wrapper">
-            <img class="logo__img" src="http://placehold.it/45x30" alt="Логотип PINK">
+    </main>
+    <footer class="footer">
+      <div class="footer__logo-wrapper">
+        <a class="footer__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <div class="footer__img-wrapper">
+            <img class="footer__img" src="http://placehold.it/45x30" alt="Логотип PINK">
           </div>
         </a>
-      </section>
-      <section class="socials">
-        <ul class="socials__list">
-          <li class="socials__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com">Мы в Вконтакте</a>
+      </div>
+      <div class="footer__socials socials">
+        <ul class="footer__socials-list">
+          <li class="footer__socials-item">
+            <a class="footer__social-link footer__social-link--vkontakte" href="https://vk.com">Мы в Вконтакте</a>
           </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com">Мы в Фейсбуке</a>
+          <li class="footer__social-item">
+            <a class="footer__social-link footer__social-link--facebook" href="https://www.facebook.com">Мы в Фейсбуке</a>
           </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com">Мы в Инстаграме</a>
+          <li class="footer__social-item">
+            <a class="footer__social-link footer__social-link--instagram" href="https://www.instagram.com">Мы в Инстаграме</a>
           </li>
         </ul>
-      </section>
-      <div class="footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+      <div class="footer__copyright">
+        <b class="footer__copyright-text">Разработано:</b>
+        <a class="footer__copyright-link footer__button" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </footer>
   </body>
