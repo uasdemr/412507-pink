@@ -1,0 +1,59 @@
+.applets {
+  background-color: #1d2631;
+}
+
+.applets__phone-wrapper {
+  font-size: 0;
+  text-align: center;
+}
+
+.applets__phone {
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  padding-top: 105px;
+  box-sizing: border-box;
+}
+
+.applets__link-wrapper {
+  padding-left: 19px;
+  padding-right: 19px;
+  padding-top: 28px;
+  box-sizing: border-box;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.applets__link {
+  display: inline-block;
+  padding-left: 36px;
+  padding-right: 36px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  line-height: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+  border: 3px solid #ffffff;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+
+.applets__list {
+  margin: 0;
+  padding: 0;
+  padding-top: 23px;
+  padding-bottom: 28px;
+  font-size: 0;
+  box-sizing: border-box;
+}
+
+.applets__item {
+  list-style-type: none;
+}
+
+.applets__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+}

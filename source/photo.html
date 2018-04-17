@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header">
       <nav class="top-menu">
-        <button class="top-menu__toggle" type="button">Открыть</button>
+        <button class="top-menu__toggle top-menu-button" type="button">Открыть</button>
         <div class="top-menu__wrapper">
           <ul class="top-menu__list">
             <li class="top-menu__item">
@@ -31,9 +32,9 @@
     </header>
     <main class="main">
       <h1 class="visually-hidden">Галлерея пользовательских фотографий.</h1>
-      <div class="main__title-wrapper">
-        <h2 class="main__title">Фотографии пользователей</h2>
-      </div>
+      <section class="info">
+        <h2 class="info__title">Фотографии пользователей</h2>
+      </section>
       <div class="users-photo-wrapper">
         <section class="users-photo">
           <div class="users-photo__description-wrapper">
@@ -41,10 +42,10 @@
               Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
             </p>
           </div>
-          <article class="user-photo hit">
+          <article class="user-photo user-photo--hit">
             <a class="user-photo__link" href="#">
               <div class="user-photo__img-wrapper">
-                <img class="user-photo__img" src="http://placehold.it/320x137" alt="Фото пользователя" width="320" height="137">
+                <img class="user-photo__img" src="img/panorama-mobile@1x.jpg" alt="Фото пользователя" width="320" height="137">
               </div>
             </a>
             <div class="user-photo__content">
@@ -62,7 +63,7 @@
           <article class="user-photo">
             <a class="user-photo__link" href="#">
               <div class="user-photo__img-wrapper">
-                <img class="user-photo__img" src="http://placehold.it/280x180" alt="Фото пользователя" width="280" height="180">
+                <img class="user-photo__img" src="img/photo-car-mobile@1x.jpg" alt="Фото пользователя" width="280" height="180">
               </div>
             </a>
             <div class="user-photo__content">
@@ -80,7 +81,7 @@
           <article class="user-photo">
             <a class="user-photo__link" href="#">
               <div class="user-photo__img-wrapper">
-                <img class="user-photo__img" src="http://placehold.it/280x180" alt="Фото пользователя" width="280" height="180">
+                <img class="user-photo__img" src="img/photo-drumset-mobile@1x.jpg" alt="Фото пользователя" width="280" height="180">
               </div>
             </a>
             <div class="user-photo__content">
@@ -98,7 +99,7 @@
           <article class="user-photo">
             <a class="user-photo__link" href="#">
               <div class="user-photo__img-wrapper">
-                <img class="user-photo__img" src="http://placehold.it/280x180" alt="Фото пользователя" width="280" height="180">
+                <img class="user-photo__img" src="img/photo-window-mobile@1x.jpg" alt="Фото пользователя" width="280" height="180">
               </div>
             </a>
             <div class="user-photo__content">
@@ -116,7 +117,7 @@
           <article class="user-photo">
             <a class="user-photo__link" href="#">
               <div class="user-photo__img-wrapper">
-                <img class="user-photo__img" src="http://placehold.it/280x180" alt="Фото пользователя" width="280" height="180">
+                <img class="user-photo__img" src="img/photo-fair-mobile@1x.jpg" alt="Фото пользователя" width="280" height="180">
               </div>
             </a>
             <div class="user-photo__content">
@@ -134,7 +135,7 @@
           <article class="user-photo">
             <a class="user-photo__link" href="#">
               <div class="user-photo__img-wrapper">
-                <img class="user-photo__img" src="http://placehold.it/280x180" alt="Фото пользователя" width="280" height="180">
+                <img class="user-photo__img" src="img/photo-pov-mobile@1x.jpg" alt="Фото пользователя" width="280" height="180">
               </div>
             </a>
             <div class="user-photo__content">
@@ -152,7 +153,7 @@
           <article class="user-photo">
             <a class="user-photo__link" href="#">
               <div class="user-photo__img-wrapper">
-                <img class="user-photo__img" src="http://placehold.it/280x180" alt="Фото пользователя" width="280" height="180">
+                <img class="user-photo__img" src="img/photo-wing-mobile@1x.jpg" alt="Фото пользователя" width="280" height="180">
               </div>
             </a>
             <div class="user-photo__content">
@@ -177,7 +178,7 @@
           </p>
         </div>
         <div class="add-photos__img-wrapper">
-          <img class="add-photos__img" src="http://placehold.it/280x374" alt="Фото пользователя" width="280" height="374">
+          <img class="add-photos__img" src="img/photo-road-mobile@1x.jpg" alt="Фото пользователя" width="280" height="374">
         </div>
         <div class="add-photos__controls">
           <form class="add-photos__form" action="https://echo.htmlacademy.ru" method="get">
@@ -211,7 +212,7 @@
           </div>
         </a>
       </div>
-      <div class="footer__socials socials">
+      <div class="footer__socials">
         <ul class="footer__socials-list">
           <li class="footer__socials-item">
             <a class="footer__social-link footer__social-link--vkontakte" href="https://vk.com">Мы в Вконтакте</a>

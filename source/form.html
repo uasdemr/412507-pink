@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header">
       <nav class="top-menu">
-        <button class="top-menu__toggle" type="button">Открыть</button>
+        <button class="top-menu__toggle top-menu-button" type="button">Открыть</button>
         <div class="top-menu__wrapper">
           <ul class="top-menu__list">
             <li class="top-menu__item">
@@ -127,7 +128,9 @@
               <textarea class="amotions__area" name="amotions__area" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </fieldset>
           </div>
-          <button class="form__button" type="submit">Отправить форму</button>
+          <div class="form__button-wrapper">
+            <button class="form__button form-button" type="submit">Отправить форму</button>
+          </div>
         </form>
       </div>
     </main>
@@ -139,7 +142,7 @@
           </div>
         </a>
       </div>
-      <div class="footer__socials socials">
+      <div class="footer__socials">
         <ul class="footer__socials-list">
           <li class="footer__socials-item">
             <a class="footer__social-link footer__social-link--vkontakte" href="https://vk.com">Мы в Вконтакте</a>

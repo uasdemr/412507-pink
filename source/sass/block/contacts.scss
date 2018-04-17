@@ -1,0 +1,42 @@
+.contacts {
+  padding-top: 45px;
+  //padding-bottom: 35px;
+  background-color: #ffffff;
+}
+
+.contacts__title {
+  margin: 0;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #283645;
+}
+
+.contacts__addres-wrapper {
+  margin-top: 25px;
+}
+
+.contacts__text {
+  margin: 0;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contacts__box {
+  margin: 0;
+  text-align: center;
+}
+
+.contacts__box-item {
+  flex: 24px;
+  line-height: 24px;
+  color: #d22856;
+}
+
+.contacts__map {
+  margin-top: 45px;
+  font-size: 0;
+  text-align: center;
+}

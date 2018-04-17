@@ -3,15 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header">
       <nav class="top-menu">
-        <button class="top-menu__toggle" type="button">Открыть</button>
+        <button class="top-menu__toggle top-menu-button" type="button">Открыть</button>
         <div class="top-menu__wrapper">
           <ul class="top-menu__list">
             <li class="top-menu__item">
-              <img class="top-menu__img" src="http://placehold.it/75x22" alt="Логотип PINK" width="75" height="22">
+              <div class="top-menu__img-wrapper">
+                <img class="top-menu__img" src="img/logo-pink-white-mobile.svg" alt="Логотип PINK" width="75" height="22">
+              </div>
             </li>
             <li class="top-menu__item">
               <a class="top-menu__link">Главная</a>
@@ -33,8 +36,12 @@
       <h1 class="visually-hidden">PINK - раскрась планету!</h1>
       <section class="applets">
         <h2 class="visually-hidden">Приложения для телефонов на разных операционных системах</h2>
-        <img class="applets__phone" src="http://placehold.it/320x395" alt="Телефон">
-        <a href="#" class="applets__link">Скачать приложение</a>
+        <div class="applets__phone-wrapper">
+          <img class="applets__phone" src="img/iphone-hand-mobile@1x.png" alt="Телефон">
+        </div>
+        <div class="applets__link-wrapper">
+          <a href="#" class="applets__link">Скачать приложение</a>
+        </div>
         <ul class="applets__list">
           <li class="applets__item">
             <img src="http://placehold.it/45x45" alt="iPhone" width="47" height="56">
@@ -54,139 +61,149 @@
         <h2 class="visually-hidden">Информативный раздел сервиса. Узнай про нас!</h2>
         <div class="information__text-wrapper">
           <p class="information__text">Устали от серости мегаполиса?</p>
-          <p class="information__text">Нам есть, что вам предложить!</p>
+          <p class="information__text information__text--margin">Нам есть, что вам предложить!</p>
         </div>
-        <article class="information-article">
-          <div class="information-article__title-wrapper">
-            <h3 class="information-article__title">Поднимает настроение</h3>
-          </div>
-          <p class="information-article__text">
-            Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
-          </p>
-        </article>
-        <article class="information-article">
-          <div class="information-article__title-wrapper">
-            <h3 class="information-article__title">Меняет мир вокруг</h3>
-          </div>
-          <p class="information-article__text">
-            Сделайте снимок и украсьте его смайликом или текстовой подписью, что бы усилить эффект
-          </p>
-        </article>
-        <article class="information-article">
-          <div class="information-article__title-wrapper">
-            <h3 class="information-article__title">Заводите новых друзей</h3>
-          </div>
-          <p class="information-article__text">
-            Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-          </p>
-        </article>
+        <div class="information__article-wrapper">
+          <article class="information__article">
+            <div class="information__article__title-wrapper">
+              <h3 class="information__article__title">Поднимает настроение</h3>
+            </div>
+            <p class="information__article__text">
+              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+            </p>
+          </article>
+          <article class="information__article information__article--margin">
+            <div class="information__article__title-wrapper">
+              <h3 class="information__article__title">Меняет мир вокруг</h3>
+            </div>
+            <p class="information__article__text">
+              Сделайте снимок и украсьте его смайликом или текстовой подписью, что бы усилить эффект
+            </p>
+          </article>
+          <article class="information__article information__article--margin">
+            <div class="information__article__title-wrapper">
+              <h3 class="information__article__title">Заводит новых друзей</h3>
+            </div>
+            <p class="information__article__text">
+              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+            </p>
+          </article>
+        </div>
         <div class="information__img-container">
-          <img class="information__img" src="http://placehold.it/157x300" alt="Телефон со смайликом">
+          <img class="information__img" src="img/iphone-screen-mobile@1x.png" alt="Телефон со смайликом">
         </div>
       </section>
       <section class="reviews">
         <div class="reviews__wrapper slider">
           <h2 class="visually-hidden">Отзывы наших пользователей.</h2>
-          <ul class="reviews-list slider__list">
-            <li class="reviews-list__item slider__item">
-              <h3 class="reviews-list__name">Николай Петров</h3>
-              <p class="reviews-list__comment">
+          <ul class="reviews__list slider__list">
+            <li class="reviews__item slider__item">
+              <h3 class="reviews__name">Николай Петров</h3>
+              <p class="reviews__comment">
                 &laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
               </p>
             </li>
-            <li class="reviews-list__item slider__item">
-              <h3 class="reviews-list__name">Петр Николаев</h3>
-              <p class="reviews-list__comment">
+            <li class="reviews__item slider__item">
+              <h3 class="reviews__name">Петр Николаев</h3>
+              <p class="reviews__comment">
                 &laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
               </p>
             </li>
-            <li class="reviews-list__item slider__item">
-              <h3 class="reviews-list__name">Егор Пересветов</h3>
-              <p class="reviews-list__comment">
+            <li class="reviews__item slider__item">
+              <h3 class="reviews__name">Егор Пересветов</h3>
+              <p class="reviews__comment">
                 &laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
               </p>
             </li>
           </ul>
-          <p class="reviews__toggles slider__toggle">
-            <button class="slider__toggle" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
+          <p class="reviews__toggles slider__toggles">
+            <button class="slider__toggle slider-button" type="button">1</button>
+            <button class="slider__toggle slider-button" type="button">2</button>
+            <button class="slider__toggle slider-button" type="button">3</button>
           </p>
         </div>
       </section>
       <section class="price">
-        <div class="price-list__wrapper slider">
-          <ul class="price-list slider__list">
-            <li class="price-list__item slider__item">
-              <table class="price-list__table">
-                <tr class="price-list__row">
-                  <th class="price-list__name"></th>
+        <div class="price__list-wrapper slider">
+          <ul class="price__list slider__list">
+            <li class="price__item slider__item">
+              <table class="price__table price__table--no-border">
+                <tr class="price__row price__row--no-border">
+                  <th class="price__name price__name--display price__name--no-border">not see
+                    <span class="price__name-costs"></span>
+                    </th>
                 </tr>
-                <tr class="price-list__row">
-                  <td class="price-list__column"></td>
+                <tr class="price__row">
+                  <td class="price__column price__column--align">Розовый фильтр</td>
                 </tr>
-                <tr class="price-list__row">
-                  <td class="price-list__column"></td>
+                <tr class="price__row">
+                  <td class="price__column price__column--align">Смайлики</td>
                 </tr>
-                <tr class="price-list__row">
-                  <td class="price-list__column"></td>
-                </tr>
-              </table>
-            </li>
-            <li class="price-list__item slider__item">
-              <table class="price-list__table">
-                <tr class="price-list__row">
-                  <th class="price-list__name">Стандарт 3,99 usd</th>
-                </tr>
-                <tr class="price-list__row">
-                  <td class="price-list__column">Розовый фильтр</td>
-                </tr>
-                <tr class="price-list__row">
-                  <td class="price-list__column">Смайлики</td>
-                </tr>
-                <tr class="price-list__row">
-                  <td class="price-list__column">Комментарии</td>
+                <tr class="price__row">
+                  <td class="price__column price__column--align">Комментарии</td>
                 </tr>
               </table>
             </li>
-            <li class="price-list__item slider__item">
-              <table class="price-list__table">
-                <tr class="price-list__row">
-                  <th class="price-list__name"></th>
+            <li class="price__item slider__item">
+              <table class="price__table">
+                <tr class="price__row">
+                  <th class="price__name">База
+                    <span class="price__name-costs">1,99 usd</span>
+                  </th>
                 </tr>
-                <tr class="price-list__row">
-                  <td class="price-list__column"></td>
+                <tr class="price__row">
+                  <td class="price__column">1</td>
                 </tr>
-                <tr class="price-list__row">
-                  <td class="price-list__column"></td>
+                <tr class="price__row">
+                  <td class="price__column">0</td>
                 </tr>
-                <tr class="price-list__row">
-                  <td class="price-list__column"></td>
+                <tr class="price__row">
+                  <td class="price__column">0</td>
                 </tr>
               </table>
             </li>
-            <li class="price-list__item slider__item">
-              <table class="price-list__table">
-                <tr class="price-list__row">
-                  <th class="price-list__name"></th>
+            <li class="price__item slider__item">
+              <table class="price__table">
+                <tr class="price__row">
+                  <th class="price__name">Стандарт
+                    <span class="price__name-costs">3,99 usd</span>
+                  </th>
                 </tr>
-                <tr class="price-list__row">
-                  <td class="price-list__column"></td>
+                <tr class="price__row">
+                  <td class="price__column price__column--align">Розовый фильтр 1</td>
                 </tr>
-                <tr class="price-list__row">
-                  <td class="price-list__column"></td>
+                <tr class="price__row">
+                  <td class="price__column price__column--align">Смайлики 1</td>
                 </tr>
-                <tr class="price-list__row">
-                  <td class="price-list__column"></td>
+                <tr class="price__row">
+                  <td class="price__column price__column--align">Комментарии 0</td>
+                </tr>
+              </table>
+            </li>
+            <li class="price__item slider__item">
+              <table class="price__table">
+                <tr class="price__row">
+                  <th class="price__name">Анлим
+                    <span class="price__name-costs">9,99 usd</span>
+                  </th>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__column">1</td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__column">1</td>
+                </tr>
+                <tr class="price__row">
+                  <td class="price__column">1</td>
                 </tr>
               </table>
             </li>
           </ul>
         </div>
-        <p class="prices__toggles slider__toggle">
-          <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
+        <p class="price__toggles slider__toggles">
+          <button class="price-button slider__toggle" type="button">1</button>
+          <button class="price-button slider__toggle" type="button">2</button>
+          <button class="price-button slider__toggle" type="button">3</button>
         </p>
       </section>
       <section class="contacts">
@@ -198,26 +215,32 @@
             Свяжитесь с нами!
           </p>
         </div>
-        <div class="contacts__call-wrapper">
-          <p class="contacts__call">
-            <b>Звоните:</b>
-            <a class="contacts__phone" href="tel:+78125556666">
+        <div class="contacts__addres-wrapper">
+          <p class="contacts__text">
+            Звоните:
+          </p>
+          <p class="contacts__box">
+            <a class="contacts__box-item" href="tel:+78125556666">
               +7 (812) 555-66-66
             </a>
           </p>
         </div>
-        <div class="contacts__write-wrapper">
-          <p class="contacts__write">
-            <b>Пишите:</b>
-            <a class="contacts__email" href="mailto:mail@htmlacademy.ru">
-              +7 (812) 555-66-66
+        <div class="contacts__addres-wrapper">
+          <p class="contacts__text">
+            Пишите:
+          </p>
+          <p class="contacts__box">
+            <a class="contacts__box-item" href="mailto:mail@htmlacademy.ru">
+              mail@htmlacademy.ru
             </a>
           </p>
         </div>
-        <div class="contacts__come-wrapper">
-          <p class="contacts__come">
-            <b>Приезжайте в гости:</b>
-            <span class="contacts__address">
+        <div class="contacts__addres-wrapper">
+          <p class="contacts__text">
+            Приезжайте в гости:
+          </p>
+          <p class="contacts__box">
+            <span class="contacts__box-item">
               ул. Большая Конюшенная, 19/8
             </span>
           </p>
@@ -227,7 +250,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer footer--display">
       <div class="footer__logo-wrapper">
         <a class="footer__link" href="https://htmlacademy.ru/intensive/adaptive">
           <div class="footer__img-wrapper">
@@ -235,7 +258,7 @@
           </div>
         </a>
       </div>
-      <div class="footer__socials socials">
+      <div class="footer__socials">
         <ul class="footer__socials-list">
           <li class="footer__socials-item">
             <a class="footer__social-link footer__social-link--vkontakte" href="https://vk.com">Мы в Вконтакте</a>

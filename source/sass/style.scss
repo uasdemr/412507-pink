@@ -1,0 +1,39 @@
+/*global*/
+@import "../sass/common/common.scss";
+@import "../sass/common/fonts.scss";
+@import "../sass/common/normalize.scss";
+@import "../sass/common/variables.scss";
+/*end of global*/
+
+@import "../sass/block/header.scss";
+@import "../sass/block/main.scss";
+@import "../sass/block/footer.scss";
+
+/*index.html*/
+@import "../sass/block/top-menu.scss";
+@import "../sass/block/top-menu-button.scss";
+@import "../sass/block/applets.scss";
+@import "../sass/block/information.scss";
+@import "../sass/block/reviews.scss";
+@import "../sass/block/slider.scss";
+@import "../sass/block/slider-button.scss";
+@import "../sass/block/price.scss";
+@import "../sass/block/price-button.scss";
+@import "../sass/block/contacts.scss";
+/*end of index.html*/
+
+/*photo.html*/
+@import "../sass/block/info.scss";
+@import "../sass/block/users-photo.scss";
+@import "../sass/block/add-photos.scss";
+/*end of photo.html*/
+
+/*form.html*/
+@import "../sass/block/form.scss";
+@import "../sass/block/personal.scss";
+@import "../sass/block/achievements.scss";
+@import "../sass/block/user-contacts.scss";
+@import "../sass/block/applets.scss";
+@import "../sass/block/amotions.scss";
+@import "../sass/block/form-button.scss";
+/*end of form.html*/
