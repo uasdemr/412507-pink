@@ -1,0 +1,18 @@
+.personal {
+  padding-bottom: 42px;
+  background-color: #ffffff;
+  padding: 0 20px;
+}
+
+.personal__label {
+  display: flex;
+  flex-direction: column;
+}
+
+.personal__acronym {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  padding: 0 20px;
+  text-transform: uppercase;
+  color: #d22856;
+}

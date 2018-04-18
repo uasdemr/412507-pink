@@ -1,0 +1,23 @@
+.user-contacts {
+  padding: 40px 20px;
+  background-color: #ffffff;
+}
+
+.user-contacts__description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #d22856;
+  &--display {
+    display: none;
+  }
+}
+
+.user-contacts__text {
+  font-size: 14px;
+  line-height: 30px;
+  color: #d22856;
+  text-transform: uppercase;
+}
