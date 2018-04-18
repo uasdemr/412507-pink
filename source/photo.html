@@ -180,27 +180,28 @@
         <div class="add-photos__img-wrapper">
           <img class="add-photos__img" src="img/photo-road-mobile@1x.jpg" alt="Фото пользователя" width="280" height="374">
         </div>
-        <div class="add-photos__controls">
+        <div class="add-photos__form-wrapper">
           <form class="add-photos__form" action="https://echo.htmlacademy.ru" method="get">
-            <div class="add-photos__icons">
-              <div class="add-photos__crop">
-                <img class="add-photos__icon" src="http://placehold.it/44x44" alt="Иконка обрезки фотографии" width="44" height="44">
-                <input class="add-photos__range" type="range">
+              <ul class="add-photos__list">
+                <li class="add-photos__item add-photos__item--active">
+                  <img class="add-photos__icon" src="http://placehold.it/44x44" alt="Иконка обрезки фотографии" width="44" height="44">
+                  <input class="add-photos__range" type="range">
+                </li>
+                <li class="add-photos__item">
+                  <img class="add-photos__icon" src="http://placehold.it/44x44" alt="Иконка обрезки фотографии" width="44" height="44">
+                  <input class="add-photos__range add-photos__range--display" type="range">
+                </li>
+                <li class="add-photos__item">
+                  <img class="add-photos__icon" src="http://placehold.it/44x44" alt="Иконка обрезки фотографии" width="44" height="44">
+                  <input class="add-photos__range add-photos__range--display" type="range">
+                </li>
+              </ul>
+              <div class="add-photos__buttons">
+                <button class="link link--add-photos link--enabled" type="submit">Запостить</button>
+                <button class="link link--add-photos link--disabled" type="reset">Отменить</button>
               </div>
-              <div class="add-photos__fill">
-                <img class="add-photos__icon" src="http://placehold.it/44x44" alt="Иконка обрезки фотографии" width="44" height="44">
-                <input class="add-photos__range" type="range">
-              </div>
-              <div class="add-photos__contrast">
-                <img class="add-photos__icon" src="http://placehold.it/44x44" alt="Иконка обрезки фотографии" width="44" height="44">
-                <input class="add-photos__range" type="range">
-              </div>
-            </div>
-            <div class="add-photos__buttons">
-              <button class="add-photos__button add-photos__button--enabled" type="submit">Запостить</button>
-              <button class="add-photos__button add-photos__button--disabled" type="reset">Отменить</button>
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
       </section>
     </main>
@@ -208,7 +209,7 @@
       <div class="footer__logo-wrapper">
         <a class="footer__link" href="https://htmlacademy.ru/intensive/adaptive">
           <div class="footer__img-wrapper">
-            <img class="footer__img" src="http://placehold.it/45x30" alt="Логотип PINK">
+            <img class="footer__img" src="img/logo-pink-blue-mobile.svg" alt="Логотип PINK" width="147" height="40">
           </div>
         </a>
       </div>
@@ -227,7 +228,7 @@
       </div>
       <div class="footer__copyright">
         <b class="footer__copyright-text">Разработано:</b>
-        <a class="footer__copyright-link footer__button" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="footer__copyright-link footer__button" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/htmlacademy.svg" alt="Лого Академии" width="27" height="34"></a>
       </div>
     </footer>
   </body>

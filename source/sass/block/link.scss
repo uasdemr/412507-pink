@@ -1,0 +1,31 @@
+.link {
+  display: inline-block;
+  padding-left: 36px;
+  padding-right: 36px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  line-height: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+  border: 3px solid #ffffff;
+  border-radius: 50px;
+  box-sizing: border-box;
+
+  &--add-photos {
+    //display: inline-block;
+    display: block;
+    margin: 0 auto;
+    padding-left: 88px;
+    padding-right: 88px;
+    outline: none;
+    color: #d22856;
+    border-color: #d22856;
+  }
+
+  &--disabled {
+    margin-top: 12px;
+    color: #e3e4e4;
+    border-color: #dddfe0;
+  }
+}
