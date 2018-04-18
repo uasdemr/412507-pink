@@ -21,11 +21,16 @@
   box-sizing: border-box;
 }
 
+.applets__list-wrapper {
+  padding-top: 30px;
+  padding-bottom: 28px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .applets__list {
   margin: 0;
   padding: 0;
-  padding-top: 30px;
-  padding-bottom: 28px;
   font-size: 0;
   box-sizing: border-box;
 }
