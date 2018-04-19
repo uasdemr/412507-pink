@@ -2,14 +2,14 @@
   background-color: #ffffff;
 }
 
-.users-photo__description {
+.users-photo__title {
   margin: 0;
   padding-top: 50px;
   padding-bottom: 50px;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
-  color: #283645;
+  color: $main-text-color;
 }
 
 .user-photo__img-wrapper {
@@ -28,10 +28,11 @@
 }
 
 .user-photo__name,
-.user-photo__description {
+.user-photo__comment {
   margin: 0;
   font-size: 14px;
   line-height: 24px;
+  color: $main-text-color;
 }
 
 .user-photo__like {
@@ -41,5 +42,5 @@
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
-  color: #d22856;
+  color: $main-description-color;
 }

@@ -7,47 +7,49 @@
   background-color: #ffffff;
 }
 
-.information__text {
+.information__description {
   margin: 0;
   font-size: 24px;
   font-weight: lighter;
   line-height: 24px;
   text-align: center;
-  color: #283645;
+  color: $main-text-color;
 
-  &--margin {
+  &--position {
     margin-top: 40px;
   }
 }
 
-.information__article-wrapper {
+.information__list {
+  margin: 0;
   padding-top: 85px;
   padding-left: 30px;
   padding-right: 30px;
-  box-sizing: border-box;
+  list-style-type: none;
   background-color: #f2f2f2;
+  box-sizing: border-box;
 }
 
-.information__article {
-  &--margin {
+.information__item {
+  &--position {
     margin-top: 40px;
   }
 }
 
-.information__article__title {
+.information__title {
   margin: 0;
   font-size: 18px;
   line-height: 24px;
   text-align: center;
 }
 
-.information__article__text {
+.information__text {
   margin: 0;
   margin-top: 20px;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
-  color: #283645;
+  color: $main-text-color;
 }
 
 .information__img-container {

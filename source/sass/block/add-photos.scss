@@ -14,7 +14,7 @@
   padding-right: 20px;
   font-size: 14px;
   line-height: 30px;
-  color: #283645;
+  color: $main-text-color;
 }
 
 .add-photos__img-wrapper {
@@ -46,7 +46,6 @@
 .add-photos__item--active > .add-photos__range {
   display: block;
   margin-top: 39px;
-  //position: absolute;
 }
 
 .add-photos__buttons {

@@ -9,9 +9,9 @@
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
-  color: #d22856;
+  color: $main-description-color;
 
-  &--display {
+  &--hidden {
     display: none;
   }
 }
@@ -19,6 +19,6 @@
 .user-contacts__text {
   font-size: 14px;
   line-height: 30px;
-  color: #d22856;
+  color: $main-description-color;
   text-transform: uppercase;
 }

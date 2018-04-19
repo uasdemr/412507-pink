@@ -1,7 +1,7 @@
 .footer {
   background-color: #ffffff;
 
-  &--display {
+  &--hidden {
     display: none;
   }
 }
@@ -33,7 +33,7 @@
 .footer__copyright-text {
   font-size: 14px;
   line-height: 18px;
-  color: #283645;
+  color: $main-text-color;
 }
 
 .footer__copyright-link {
