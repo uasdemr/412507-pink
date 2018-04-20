@@ -1,0 +1,48 @@
+.applets {
+  background-color: #283645;
+}
+
+.applets__phone-wrapper {
+  font-size: 0;
+  text-align: center;
+}
+
+.applets__phone {
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  padding-top: 105px;
+  box-sizing: border-box;
+}
+
+.applets__link-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 28px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.applets__list-wrapper {
+  padding-top: 30px;
+  padding-bottom: 28px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.applets__list {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  box-sizing: border-box;
+}
+
+.applets__item {
+  list-style-type: none;
+}
+
+.applets__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+}

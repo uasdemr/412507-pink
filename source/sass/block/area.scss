@@ -1,0 +1,21 @@
+.area {
+  padding: 40px 20px;
+  background-color: #ffffff;
+}
+
+.area__description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $main-description-color;
+}
+
+.form__textarea-wrapper {
+  text-align: center;
+}
+
+.area__area {
+  margin-top: 20px;
+}

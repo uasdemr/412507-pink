@@ -1,0 +1,38 @@
+.reviews__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 50px;
+  padding-bottom: 45px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+.reviews__list {
+  margin: 0;
+  padding: 0;
+}
+
+.reviews__item {
+  list-style-type: none;
+}
+
+.reviews__name {
+  margin: 0;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.reviews__comment {
+  margin: 0;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: $main-text-color;
+}
+
+.reviews__toggles {
+  margin: 0;
+  margin-top: 35px;
+  text-align: center;
+}
