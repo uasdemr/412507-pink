@@ -1,7 +1,6 @@
 .information__text-wrapper {
   padding-left: 58px;
   padding-right: 58px;
-  padding-top: 45px;
   padding-bottom: 35px;
   box-sizing: border-box;
   background-color: #ffffff;
@@ -9,15 +8,12 @@
 
 .information__description {
   margin: 0;
+  padding-top: 45px;
   font-size: 24px;
   font-weight: lighter;
   line-height: 24px;
   text-align: center;
   color: $main-text-color;
-
-  &--position {
-    margin-top: 40px;
-  }
 }
 
 .information__list {
