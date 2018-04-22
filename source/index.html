@@ -31,39 +31,41 @@
           </ul>
         </div>
       </nav>
+      <section class="applets">
+        <h2 class="visually-hidden">Приложения для телефонов на разных операционных системах</h2>
+        <div class="applets__wrapper">
+          <p class="applets__title applets__title--hidden">
+            Взгляните на жизнь иначе!
+          </p>
+          <div class="applets__link-wrapper">
+            <a href="#" class="link applets__link">Скачать приложение</a>
+          </div>
+          <div class="applets__list-wrapper">
+            <ul class="applets__list">
+              <li class="applets__item">
+                <img src="img/logo-apple.svg" alt="iPhone" width="47" height="56">
+              </li>
+              <li class="applets__item">
+                <img src="img/logo-android.svg" alt="Android" width="43" height="47">
+              </li>
+              <li class="applets__item">
+                <img src="img/logo-microsoft.svg" alt="Windows Phone" width="44" height="41">
+              </li>
+            </ul>
+          </div>
+          <p class="applets__text">
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+          </p>
+        </div>
+      </section>
     </header>
     <main class="main">
       <h1 class="visually-hidden">PINK - раскрась планету!</h1>
-      <section class="applets">
-        <h2 class="visually-hidden">Приложения для телефонов на разных операционных системах</h2>
-        <div class="applets__phone-wrapper">
-          <img class="applets__phone" src="img/iphone-hand-mobile@1x.png" alt="Телефон">
-        </div>
-        <div class="applets__link-wrapper">
-          <a href="#" class="link applets__link">Скачать приложение</a>
-        </div>
-        <div class="applets__list-wrapper">
-          <ul class="applets__list">
-            <li class="applets__item">
-              <img src="img/logo-apple.svg" alt="iPhone" width="47" height="56">
-            </li>
-            <li class="applets__item">
-              <img src="img/logo-android.svg" alt="Android" width="43" height="47">
-            </li>
-            <li class="applets__item">
-              <img src="img/logo-microsoft.svg" alt="Windows Phone" width="44" height="41">
-            </li>
-          </ul>
-        </div>
-        <p class="applets__text">
-          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-        </p>
-      </section>
       <section class="information">
         <h2 class="visually-hidden">
           Информативный раздел сервиса. Узнай про нас!
         </h2>
-        <div class="information__text-wrapper">
+        <div class="information__description-wrapper">
           <p class="information__description">
             Устали от серости мегаполиса?
           </p>
@@ -80,22 +82,28 @@
               Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
             </p>
           </li>
-          <li class="information__item information__item--position">
+          <li class="information__item">
             <h3 class="information__title">Меняет мир вокруг</h3>
             <p class="information__text">
               Сделайте снимок и украсьте его смайликом или текстовой подписью, что бы усилить эффект
             </p>
           </li>
-          <li class="information__item information__item--position">
+          <li class="information__item">
             <h3 class="information__title">Заводит новых друзей</h3>
             <p class="information__text">
               Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
             </p>
           </li>
         </ul>
-        <div class="information__img-container">
-          <img class="information__img" src="img/iphone-screen-mobile@1x.png" alt="Телефон со смайликом">
-        </div>
+        <article class="information__effect information__effect--hidden">
+          <h3 class="information__title">Эффект на 24 часа!</h3>
+          <p class="information__text">
+            Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
+          </p>
+          <a href="#" class="information__know">
+            Узнать больше об исследовании
+          </a>
+        </article>
       </section>
       <section class="reviews">
         <div class="reviews__wrapper slider">
@@ -130,7 +138,7 @@
       <section class="cost">
         <div class="cost__list-wrapper slider">
           <ul class="cost__list slider__list">
-            <li class="cost__item slider__item">
+            <li class="cost__item cost__item--hidden slider__item">
               <table class="cost__table cost__table--no-border">
                 <tr class="cost__row cost__row--no-border">
                   <th class="cost__name cost__name--hidden cost__name--no-border">
@@ -149,7 +157,7 @@
                 </tr>
               </table>
             </li>
-            <li class="cost__item slider__item">
+            <li class="cost__item cost__item--hidden slider__item">
               <table class="cost__table">
                 <tr class="cost__row cost__row--no-border">
                   <th class="cost__name">База
@@ -175,17 +183,23 @@
                   </th>
                 </tr>
                 <tr class="cost__row">
-                  <td class="cost__column cost__column--name">Розовый фильтр 1</td>
+                  <td class="cost__column">
+                    <span class="column__text">Розовый фильтр</span> 1
+                  </td>
                 </tr>
                 <tr class="cost__row">
-                  <td class="cost__column cost__column--name">Смайлики 1</td>
+                  <td class="cost__column">
+                    <span class="column__text">Смайлики</span> 1
+                  </td>
                 </tr>
                 <tr class="cost__row">
-                  <td class="cost__column cost__column--name">Комментарии 0</td>
+                  <td class="cost__column">
+                    <span class="column__text">Комментарии</span> 0
+                  </td>
                 </tr>
               </table>
             </li>
-            <li class="cost__item slider__item">
+            <li class="cost__item cost__item--hidden slider__item">
               <table class="cost__table cost__table--no-border">
                 <tr class="cost__row cost__row--no-border">
                   <th class="cost__name">Анлим
@@ -220,38 +234,40 @@
             Свяжитесь с нами!
           </p>
         </div>
-        <div class="contacts__addres-wrapper">
-          <p class="contacts__text">
-            Звоните:
-          </p>
-          <p class="contacts__box">
-            <a class="contacts__box-item" href="tel:+78125556666">
-              +7 (812) 555-66-66
-            </a>
-          </p>
-        </div>
-        <div class="contacts__addres-wrapper">
-          <p class="contacts__text">
-            Пишите:
-          </p>
-          <p class="contacts__box">
-            <a class="contacts__box-item" href="mailto:mail@htmlacademy.ru">
-              mail@htmlacademy.ru
-            </a>
-          </p>
-        </div>
-        <div class="contacts__addres-wrapper">
-          <p class="contacts__text">
-            Приезжайте в гости:
-          </p>
-          <p class="contacts__box">
-            <span class="contacts__box-item">
-              ул. Большая Конюшенная, 19/8
-            </span>
-          </p>
+        <div class="contacts__contact-wrapper">
+          <div class="contacts__addres-wrapper">
+            <p class="contacts__text">
+              Звоните:
+            </p>
+            <p class="contacts__box">
+              <a class="contacts__box-item" href="tel:+78125556666">
+                +7 (812) 555-66-66
+              </a>
+            </p>
+          </div>
+          <div class="contacts__addres-wrapper">
+            <p class="contacts__text">
+              Пишите:
+            </p>
+            <p class="contacts__box">
+              <a class="contacts__box-item" href="mailto:mail@htmlacademy.ru">
+                mail@htmlacademy.ru
+              </a>
+            </p>
+          </div>
+          <div class="contacts__addres-wrapper">
+            <p class="contacts__text">
+              Приезжайте в гости:
+            </p>
+            <p class="contacts__box">
+              <span class="contacts__box-item">
+                ул. Большая Конюшенная, 19/8
+              </span>
+            </p>
+          </div>
         </div>
         <div class="contacts__map">
-          <img src="http://placehold.it/320x200" alt="Карта" width="320" height="200">
+          <!-- <img src="http://placehold.it/320x200" alt="Карта" width="320" height="200"> -->
         </div>
       </section>
     </main>

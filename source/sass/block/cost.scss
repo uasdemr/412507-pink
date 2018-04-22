@@ -1,4 +1,6 @@
 .cost {
+  width: 320px;
+  margin: 0 auto;
   padding-top: 90px;
   padding-bottom: 45px;
   background-color: #f2f2f2;
@@ -7,18 +9,22 @@
 .cost__list {
   margin: 0;
   padding: 0;
-  display: flex;
   font-size: 0;
 }
 
 .cost__item {
+  width: 100%;
   font-size: 18px;
   list-style-type: none;
-  border-right: 2px solid #e5e5e5;
+
+  &--hidden {
+    display: none;
+  }
 }
 
 .cost__table {
   border-collapse: collapse;
+  width: 100%;
 
   &--no-border {
     border: none;
@@ -26,7 +32,6 @@
 }
 
 .cost__row {
-  border-top: 2px solid #e5e5e5;
   border-bottom: 2px solid #e5e5e5;
 
   &--no-border {
@@ -34,24 +39,30 @@
   }
 }
 
+.cost__row:first-child {
+  height: 98px;
+}
+
 .cost__column {
-  padding-top: 17px;
-  padding-bottom: 17px;
+  padding: 17px 20px;
+  font-size: 14px;
+  line-height: 30px;
   text-align: center;
+  border-right: 2px solid #e5e5e5;
   background-color: #ffffff;
   box-sizing: border-box;
 
   &--name {
-    padding-left: 22px;
-    padding-right: 17px;
+    padding-left: 15px;
+    padding-right: 15px;
     text-align: left;
+    border-left: 2px solid #e5e5e5;
   }
 }
 
 .cost__name {
   width: 276px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding: 25px 20px;
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
@@ -63,8 +74,55 @@
   }
 }
 
+.cost__name-costs {
+  display: block;
+  font-weight: lighter;
+}
+
 .cost__toggles {
   margin: 0;
   margin-top: 40px;
   text-align: center;
+}
+
+@media(min-width: $tablet-width) {
+  .cost {
+    width: 660px;
+  }
+
+  .cost__list {
+    display: flex;
+    padding: 0 20px;
+    justify-content: center;
+  }
+
+  .cost__item {
+    width: auto;
+
+    &--hidden {
+      display: block;
+    }
+  }
+
+  .cost__name {
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  .cost__item:first-child .cost__column:first-child {
+    border-top: 2px solid #e5e5e5;
+  }
+
+   .column__text {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cost {
+    width: 1200px;
+  }
+
+  .cost__list {
+    padding: 0 120px;
+  }
 }

@@ -40,3 +40,19 @@
   margin-left: 15px;
   font-size: 0;
 }
+
+@media(min-width: $tablet-width) {
+  .footer {
+    width: 660px;
+    margin: 0 auto;
+    &--hidden {
+      display: block;
+    }
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .footer {
+    width: 1200px;
+  }
+}
