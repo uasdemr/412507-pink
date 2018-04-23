@@ -10,6 +10,7 @@
 }
 
 @media(min-width: $tablet-width) {
+
   .send__wrapper {
     width: 660px;
     font-size: 18px;
@@ -17,6 +18,7 @@
 }
 
 @media(min-width: $desktop-width) {
+
   .send__wrapper {
     width: 960px;
   }

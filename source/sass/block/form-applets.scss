@@ -23,12 +23,14 @@
 }
 
 @media(min-width: $tablet-width) {
+
   .form-applets__wrapper {
     width: 660px;
   }
 }
 
 @media(min-width: $desktop-width) {
+
   .form-applets__wrapper {
     width: 960px;
   }

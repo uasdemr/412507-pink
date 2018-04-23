@@ -11,12 +11,6 @@
   box-sizing: border-box;
 }
 
-.personal__label {
-  //display: flex;
-  //flex-direction: column;
-  //box-sizing: border-box;
-}
-
 .personal__acronym {
   margin-top: 25px;
   margin-bottom: 15px;
@@ -26,12 +20,14 @@
 }
 
 @media(min-width: $tablet-width) {
+
   .personal__wrapper {
     width: 660px;
   }
 }
 
 @media(min-width: $desktop-width) {
+
   .personal__wrapper {
     width: 960px;
   }

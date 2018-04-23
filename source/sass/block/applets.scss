@@ -68,12 +68,13 @@
     width: 620px;
     min-height: 560px;
     padding-top: 100px;
-    background-size: 470px 546px ,660px 780px;
+    background-size: 470px 546px, 660px 780px;
     background-position: 170px 115px, center -120px;
   }
 
   .applets__title {
     width: 250px;
+
     &--hidden {
       display: block;
     }

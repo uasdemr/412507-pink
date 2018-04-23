@@ -28,12 +28,14 @@
 }
 
 @media(min-width: $tablet-width) {
+
   .achievements__wrapper {
     width: 660px;
   }
 }
 
 @media(min-width: $desktop-width) {
+
   .achievements__wrapper {
     width: 960px;
   }

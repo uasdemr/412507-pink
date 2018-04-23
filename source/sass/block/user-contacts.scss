@@ -30,12 +30,14 @@
 }
 
 @media(min-width: $tablet-width) {
+
   .user-contacts__wrapper {
     width: 660px;
   }
 }
 
 @media(min-width: $desktop-width) {
+
   .user-contacts__wrapper {
     width: 960px;
   }

@@ -1,6 +1,5 @@
 .information {
   width: 320px;
-  //min-height: 1000px;
   margin: 0 auto;
   background-color: #f2f2f2;
 }
@@ -30,7 +29,6 @@
   padding-right: 20px;
   padding-bottom: 320px;
   list-style-type: none;
-  //background-color: #f2f2f2;
   background-image: url("../../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: bottom -40px center;
@@ -38,17 +36,17 @@
 }
 
 .information__item {
-    margin-top: 40px;
-    &--hidden {
-      display: none;
-    }
+  margin-top: 40px;
+
+  &--hidden {
+    display: none;
+  }
 }
 
 .information__effect {
   &--hidden {
     display: none;
   }
-  background-color: #ffffff;
 }
 
 .information__title {
@@ -76,6 +74,7 @@
 }
 
 @media(min-width: $tablet-width) {
+
   .information {
     width: 660px;
   }
@@ -109,6 +108,7 @@
     .information__text {
       text-align: left;
     }
+
     .information__know {
       display: inline-block;
       margin-top: 20px;
@@ -121,6 +121,7 @@
 }
 
 @media(min-width: $desktop-width) {
+
   .information {
     width: 1200px;
   }
