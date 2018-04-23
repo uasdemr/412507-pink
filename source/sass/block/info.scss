@@ -17,8 +17,7 @@
   background-position: center -60px;
 }
 
-@media(min-width: $tablet-width) {
-
+@media (min-width: $tablet-width) {
   .info {
     width: 660px;
   }
@@ -31,8 +30,7 @@
   }
 }
 
-@media(min-width: $desktop-width) {
-
+@media (min-width: $desktop-width) {
   .info {
     width: 1200px;
   }

@@ -31,8 +31,7 @@
   order: 7;
 }
 
-@media(min-width: $tablet-width) {
-
+@media (min-width: $tablet-width) {
   .form__achievements {
     order: 5;
   }
@@ -42,8 +41,7 @@
   }
 }
 
-@media(min-width: $desktop-width) {
-
+@media (min-width: $desktop-width) {
   .form__wrapper {
     flex-direction: row;
     flex-wrap: wrap;

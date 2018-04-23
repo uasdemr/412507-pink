@@ -85,7 +85,7 @@
   text-align: center;
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .cost {
     width: 660px;
   }
@@ -118,7 +118,6 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .cost {
     width: 1200px;
   }

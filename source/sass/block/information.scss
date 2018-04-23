@@ -73,8 +73,7 @@
   box-sizing: border-box;
 }
 
-@media(min-width: $tablet-width) {
-
+@media (min-width: $tablet-width) {
   .information {
     width: 660px;
   }
@@ -117,11 +116,9 @@
       color: $link-text-color;
     }
   }
-
 }
 
-@media(min-width: $desktop-width) {
-
+@media (min-width: $desktop-width) {
   .information {
     width: 1200px;
   }

@@ -63,8 +63,7 @@
   margin-top: 38px;
 }
 
-@media(min-width: $tablet-width) {
-
+@media (min-width: $tablet-width) {
   .add-photos__description {
     width: 660px;
   }
@@ -86,8 +85,7 @@
   }
 }
 
-@media(min-width: $desktop-width) {
-
+@media (min-width: $desktop-width) {
   .add-photos {
     background-color: #ffffff;
   }
@@ -98,7 +96,6 @@
 
   .add-photos__wrapper {
     width: 940px;
-    //padding: 0 120px;
     background-color: #f2f2f2;
   }
 

@@ -19,15 +19,13 @@
   color: $main-description-color;
 }
 
-@media(min-width: $tablet-width) {
-
+@media (min-width: $tablet-width) {
   .personal__wrapper {
     width: 660px;
   }
 }
 
-@media(min-width: $desktop-width) {
-
+@media (min-width: $desktop-width) {
   .personal__wrapper {
     width: 960px;
   }

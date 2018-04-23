@@ -28,15 +28,13 @@
   box-sizing: border-box;
 }
 
-@media(min-width: $tablet-width) {
-
+@media (min-width: $tablet-width) {
   .area__wrapper {
     width: 660px;
   }
 }
 
-@media(min-width: $desktop-width) {
-
+@media (min-width: $desktop-width) {
   .area__wrapper {
     width: 960px;
   }

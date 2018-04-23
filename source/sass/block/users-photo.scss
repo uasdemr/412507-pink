@@ -44,16 +44,14 @@
   color: $main-description-color;
 }
 
-@media(min-width: $tablet-width) {
-
+@media (min-width: $tablet-width) {
   .users-photo-wrapper {
     width: 660px;
     margin: 0 auto;
   }
 }
 
-@media(min-width: $desktop-width) {
-
+@media (min-width: $desktop-width) {
   .users-photo-wrapper {
     width: 1200px;
     margin: 0 auto;
