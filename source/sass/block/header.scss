@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-image: url("/img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center 395px;
   background-size: 320px 395px;
@@ -12,7 +12,7 @@
 
 @media (min-width: $tablet-width) {
   .header {
-    background-image: url("../../img/bg-back-mobile@1x.jpg");
+    background-image: url("/img/bg-back-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: center 240px;
     background-size: 660px 853px;
