@@ -1,6 +1,12 @@
 .form-applets {
-  padding: 40px 20px;
   background-color: #f2f2f2;
+}
+
+.form-applets__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  box-sizing: border-box;
 }
 
 .form-applets__description {
@@ -14,4 +20,16 @@
 
 .form-applets__label-wrapper {
   margin-top: 35px;
+}
+
+@media(min-width: $tablet-width) {
+  .form-applets__wrapper {
+    width: 660px;
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .form-applets__wrapper {
+    width: 960px;
+  }
 }

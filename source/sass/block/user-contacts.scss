@@ -1,6 +1,12 @@
 .user-contacts {
-  padding: 40px 20px;
   background-color: #ffffff;
+}
+
+.user-contacts__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  box-sizing: border-box;
 }
 
 .user-contacts__description {
@@ -21,4 +27,16 @@
   line-height: 30px;
   color: $main-description-color;
   text-transform: uppercase;
+}
+
+@media(min-width: $tablet-width) {
+  .user-contacts__wrapper {
+    width: 660px;
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .user-contacts__wrapper {
+    width: 960px;
+  }
 }

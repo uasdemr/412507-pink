@@ -3,7 +3,10 @@
 }
 
 .achievements__wrapper {
+  width: 320px;
+  margin: 0 auto;
   padding: 40px 20px;
+  box-sizing: border-box;
 }
 
 .achievements__description {
@@ -22,4 +25,16 @@
   font-size: 18px;
   line-height: 30px;
   color: #283645;
+}
+
+@media(min-width: $tablet-width) {
+  .achievements__wrapper {
+    width: 660px;
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .achievements__wrapper {
+    width: 960px;
+  }
 }
