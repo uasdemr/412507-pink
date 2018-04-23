@@ -1,6 +1,10 @@
 .footer {
   background-color: #ffffff;
+}
 
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
   &--hidden {
     display: none;
   }
@@ -42,9 +46,13 @@
 }
 
 @media(min-width: $tablet-width) {
-  .footer {
+  .footer__wrapper {
+    flex-direction: row;
     width: 660px;
+    padding: 0 20px;
     margin: 0 auto;
+    box-sizing: border-box;
+
     &--hidden {
       display: block;
     }
@@ -52,7 +60,8 @@
 }
 
 @media(min-width: $desktop-width) {
-  .footer {
+  .footer__wrapper {
     width: 1200px;
+    padding: 0 120px;
   }
 }
