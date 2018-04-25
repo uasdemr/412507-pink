@@ -45,12 +45,12 @@
   font-weight: normal;
 }
 
- .table__column {
-  height: 59px;
-  text-align: center;
-  vertical-align: center;
-  border-left: 2px solid #e5e5e5;
-  background-color: #ffffff;
+.table__column {
+height: 59px;
+text-align: center;
+vertical-align: center;
+border-left: 2px solid #e5e5e5;
+background-color: #ffffff;
 
   &--show {
     display: flex;
