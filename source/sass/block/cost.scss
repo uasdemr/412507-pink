@@ -4,6 +4,7 @@
   overflow: hidden;
   background-color: #f2f2f2;
 }
+
 .table {
   margin-left: -540px;
   border-collapse: collapse;
@@ -26,10 +27,10 @@
   border-right: 2px solid #e5e5e5;
   background-color: #283645;
 
-    &--hidden {
-      opacity: 0;
-      border-bottom: 2px solid #e5e5e5;;
-    }
+  &--hidden {
+    opacity: 0;
+    border-bottom: 2px solid #e5e5e5;
+  }
 }
 
 .table__title:first-child {
@@ -46,11 +47,11 @@
 }
 
 .table__column {
-height: 59px;
-text-align: center;
-vertical-align: center;
-border-left: 2px solid #e5e5e5;
-background-color: #ffffff;
+  height: 59px;
+  text-align: center;
+  vertical-align: center;
+  border-left: 2px solid #e5e5e5;
+  background-color: #ffffff;
 
   &--show {
     display: flex;
