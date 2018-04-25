@@ -9,13 +9,31 @@
   border-collapse: collapse;
 }
 
+.table__row {
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.table__row:first-child {
+  border-bottom: none;
+}
+
 .table__title {
   min-width: 280px;
   height: 80px;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+  border-right: 2px solid #e5e5e5;
   background-color: #283645;
+
+    &--hidden {
+      opacity: 0;
+      border-bottom: 2px solid #e5e5e5;;
+    }
+}
+
+.table__title:first-child {
+  border-right: none;
 }
 
 .table__title-text {
@@ -31,6 +49,7 @@
   height: 59px;
   text-align: center;
   vertical-align: center;
+  border-left: 2px solid #e5e5e5;
   background-color: #ffffff;
 
   &--show {
@@ -39,6 +58,10 @@
     justify-content: space-between;
     align-items: center;
   }
+}
+
+.table__column:last-child {
+  border-right: 2px solid #e5e5e5;
 }
 
 .table__icon {
@@ -70,10 +93,6 @@
 
   .table__title {
     min-width: 150px;
-
-    &--hidden {
-      opacity: 0;
-    }
   }
 
   .table__column {
