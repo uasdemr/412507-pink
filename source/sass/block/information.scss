@@ -37,16 +37,10 @@
 
 .information__item {
   margin-top: 40px;
-
-  &--hidden {
-    display: none;
-  }
 }
 
 .information__effect {
-  &--hidden {
     display: none;
-  }
 }
 
 .information__title {
@@ -98,10 +92,7 @@
     padding-bottom: 100px;
     padding-right: 20px;
     background-color: #ffffff;
-
-    &--hidden {
-      display: block;
-    }
+    display: block;
 
     .information__title,
     .information__text {
@@ -135,12 +126,6 @@
     box-sizing: border-box;
   }
 
-  .information__item {
-    &--hidden {
-      display: block;
-    }
-  }
-
   .information__effect {
     width: 940px;
     margin: 0 auto;
@@ -150,10 +135,6 @@
     padding-right: 120px;
     box-sizing: border-box;
     background-color: #f2f2f2;
-
-    &--hidden {
-      display: block;
-    }
 
     .information__title,
     .information__text {
