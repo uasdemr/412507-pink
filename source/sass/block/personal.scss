@@ -1,12 +1,14 @@
 .personal {
-  padding: 0 20px;
   padding-bottom: 42px;
   background-color: #ffffff;
+  box-sizing: border-box;
 }
 
-.personal__label {
-  display: flex;
-  flex-direction: column;
+.personal__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .personal__acronym {
@@ -15,4 +17,16 @@
   padding: 0 20px;
   text-transform: uppercase;
   color: $main-description-color;
+}
+
+@media (min-width: $tablet-width) {
+  .personal__wrapper {
+    width: 660px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .personal__wrapper {
+    width: 960px;
+  }
 }

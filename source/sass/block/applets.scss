@@ -1,21 +1,31 @@
 .applets {
-  background-color: #283645;
-}
-
-.applets__phone-wrapper {
-  font-size: 0;
-  text-align: center;
-}
-
-.applets__phone {
-  background-image: url("../../img/bg-back-mobile@1x.jpg");
-  padding-top: 105px;
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 392px;
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: 0 106px;
   box-sizing: border-box;
 }
 
+.applets__wrapper {
+  background-color: $main-text-color;
+}
+
+.applets__title {
+  margin: 0;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: lighter;
+  color: #ffffff;
+  text-align: center;
+
+  &--hidden {
+    display: none;
+  }
+}
+
 .applets__link-wrapper {
-  padding-left: 20px;
-  padding-right: 20px;
   padding-top: 28px;
   text-align: center;
   box-sizing: border-box;
@@ -23,12 +33,16 @@
 
 .applets__list-wrapper {
   padding-top: 30px;
-  padding-bottom: 28px;
+  padding-bottom: 15px;
   padding-left: 20px;
   padding-right: 20px;
 }
 
 .applets__list {
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   margin: 0;
   padding: 0;
   font-size: 0;
@@ -36,13 +50,47 @@
 }
 
 .applets__item {
+  display: flex;
   list-style-type: none;
 }
 
 .applets__text {
   margin: 0;
+  padding: 20px;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
   color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .applets {
+    width: 620px;
+    min-height: 560px;
+    padding-top: 100px;
+    background-size: 470px 546px, 660px 780px;
+    background-position: 170px 115px, center -120px;
+  }
+
+  .applets__title {
+    width: 250px;
+
+    &--hidden {
+      display: block;
+    }
+  }
+
+  .applets__wrapper {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .applets {
+    width: 940px;
+  }
 }

@@ -1,7 +1,8 @@
 .reviews__wrapper {
+  width: 320px;
+  margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 50px;
   padding-bottom: 45px;
   background-color: #ffffff;
   box-sizing: border-box;
@@ -13,6 +14,7 @@
 }
 
 .reviews__item {
+  padding-top: 50px;
   list-style-type: none;
 }
 
@@ -35,4 +37,16 @@
   margin: 0;
   margin-top: 35px;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__wrapper {
+    width: 660px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews__wrapper {
+    width: 1200px;
+  }
 }

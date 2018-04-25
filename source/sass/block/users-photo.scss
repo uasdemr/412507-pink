@@ -4,8 +4,7 @@
 
 .users-photo__title {
   margin: 0;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding: 50px 20px;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
@@ -17,9 +16,9 @@
   text-align: center;
 }
 
-.user-photo {
-  margin-left: 20px;
-  margin-right: 20px;
+.users-photo-wrapper {
+  width: 320px;
+  margin: 0 auto;
 }
 
 .user-photo__content {
@@ -43,4 +42,18 @@
   line-height: 24px;
   text-transform: uppercase;
   color: $main-description-color;
+}
+
+@media (min-width: $tablet-width) {
+  .users-photo-wrapper {
+    width: 660px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .users-photo-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+  }
 }

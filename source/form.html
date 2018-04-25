@@ -31,28 +31,44 @@
       </nav>
     </header>
     <main class="main">
-      <h1 class="visually-hidden">Форма для отправки своей истории. Тут можно выиграть денежный приз!</h1>
+      <h1 class="visually-hidden">
+        Форма для отправки своей истории. Тут можно выиграть денежный приз!
+      </h1>
       <section class="info">
-        <h2 class="info__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
+        <h2 class="info__title">
+          <span class="info__title-text">
+            Конкурс на самое безбашенное путешествие с Пинк
+          </span>
+        </h2>
       </section>
-      <div class="form-wrapper">
-        <form class="main__form form" action="https://echo.htmlacademy.ru" method="get">
-          <p class="form__description">
-            Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-          </p>
+      <form class="main__form form" action="https://echo.htmlacademy.ru" method="get">
+        <div class="form__wrapper">
+          <section class="form__description description">
+            <p class="description__wrapper">
+                Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+            </p>
+          </section>
           <section class="form__personal personal">
-            <label class="personal__label">
-              <span class="personal__acronym">Фамилия:</span>
-              <input class="personal__input" name="surname" type="text" placeholder="Укажите фамилию *">
-            </label>
-            <label class="personal__label">
-              <span class="personal__acronym">Имя:</span>
-              <input class="personal__input" name="name" type="text" placeholder="Укажите имя *">
-            </label>
-            <label class="personal__label">
-              <span class="personal__acronym">Отчество:</span>
-              <input class="personal__input" type="text" name="patronymic" placeholder="Ну и отчество тоже">
-            </label>
+            <div class="personal__wrapper">
+              <label class="personal__label">
+                <span class="personal__acronym">
+                  Фамилия:
+                </span>
+                <input class="personal__input" name="surname" type="text" placeholder="Укажите фамилию *">
+              </label>
+              <label class="personal__label">
+                <span class="personal__acronym">
+                  Имя:
+                </span>
+                <input class="personal__input" name="name" type="text" placeholder="Укажите имя *">
+              </label>
+              <label class="personal__label">
+                <span class="personal__acronym">
+                  Отчество:
+                </span>
+                <input class="personal__input" type="text" name="patronymic" placeholder="Ну и отчество тоже">
+              </label>
+            </div>
           </section>
           <section class="form__achievements achievements">
             <div class="achievements__wrapper">
@@ -61,34 +77,46 @@
               </p>
               <div class="achievements__label-wrapper">
                 <label class="achievements__label">
-                  <input class="achievements__input" type="checkbox" name="selfie" value="1" checked>
-                  <span class="achievements__indicator"></span>
-                  <span class="achievements__text">Сделал селфи с акулой</span>
+                  <input class="achievements__input" type="checkbox" name="selfie" value="selfie" checked>
+                  <span class="achievements__indicator" aria-label="Checkbox, селфи с акулой"></span>
+                  <span class="achievements__text">
+                    Сделал селфи с акулой
+                  </span>
                 </label>
                 <label class="achievements__label">
-                  <input class="achievements__input" type="checkbox" name="beach" value="1" checked>
-                  <span class="achievements__indicator"></span>
-                  <span class="achievements__text">Обгорел на пляже</span>
+                  <input class="achievements__input" type="checkbox" name="beach" value="beach" checked>
+                  <span class="achievements__indicator" aria-label="Checkbox, обгорел на пляже"></span>
+                  <span class="achievements__text">
+                    Обгорел на пляже
+                  </span>
                 </label>
                 <label class="achievements__label">
-                  <input class="achievements__input" type="checkbox" name="celebrity" value="1">
-                  <span class="achievements__indicator"></span>
-                  <span class="achievements__text">Видел Чака Норриса</span>
+                  <input class="achievements__input" type="checkbox" name="celebrity" value="celebrity">
+                  <span class="achievements__indicator" aria-label="Checkbox, Видел Чака Норриса"></span>
+                  <span class="achievements__text">
+                    Видел Чака Норриса
+                  </span>
                 </label>
                 <label class="achievements__label">
-                  <input class="achievements__input" type="checkbox" name="gift" value="1">
-                  <span class="achievements__indicator"></span>
-                  <span class="achievements__text">Накупил сувениров</span>
+                  <input class="achievements__input" type="checkbox" name="gift" value="gift">
+                  <span class="achievements__indicator" aria-label="Checkbox, накупил сувениров"></span>
+                  <span class="achievements__text">
+                    Накупил сувениров
+                  </span>
                 </label>
                 <label class="achievements__label">
-                  <input class="achievements__input" type="checkbox" name="tower" value="1" checked>
-                  <span class="achievements__indicator"></span>
-                  <span class="achievements__text">Удержал башню</span>
+                  <input class="achievements__input" type="checkbox" name="tower" value="tower" checked>
+                  <span class="achievements__indicator" aria-label="Checkbox, удержал башню"></span>
+                  <span class="achievements__text">
+                    Удержал башню
+                  </span>
                 </label>
                 <label class="achievements__label">
-                  <input class="achievements__input" type="checkbox" name="hotel" value="1">
-                  <span class="achievements__indicator"></span>
-                  <span class="achievements__text">Разгромил отель</span>
+                  <input class="achievements__input" type="checkbox" name="hotel" value="hotel">
+                  <span class="achievements__indicator" aria-label="Checkbox, разгромил отель"></span>
+                  <span class="achievements__text">
+                    Разгромил отель
+                  </span>
                 </label>
               </div>
             </div>
@@ -148,16 +176,20 @@
               </div>
             </div>
           </section>
-          <div class="form__button-wrapper">
-            <button class="form__button form-button" type="submit">Отправить форму</button>
-          </div>
-          <div class="form__required required">
-            <p class="required__description">
-              * — обязательные поля
-            </p>
-          </div>
-        </form>
-      </div>
+          <section class="form__send send">
+            <div class="send__wrapper">
+              <div class="form__button-wrapper">
+                <button class="form__button form-button" type="submit">Отправить форму</button>
+              </div>
+              <div class="form__required required">
+                <p class="required__description">
+                  * — обязательные поля
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </form>
     </main>
     <footer class="footer">
       <div class="footer__logo-wrapper">

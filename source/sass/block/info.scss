@@ -1,11 +1,12 @@
 .info {
+  width: 320px;
+  margin: 0 auto;
   background-color: #283645;
 }
 
 .info__title {
   margin: 0;
-  padding-top: 35px;
-  padding-bottom: 85px;
+  padding: 35px 20px 85px 20px;
   font-size: 24px;
   font-weight: lighter;
   line-height: 24px;
@@ -14,4 +15,30 @@
   background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center -60px;
+}
+
+@media (min-width: $tablet-width) {
+  .info {
+    width: 660px;
+  }
+
+  .info__title {
+    padding-top: 75px;
+    padding-bottom: 145px;
+    font-size: 50px;
+    line-height: 55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .info {
+    width: 1200px;
+  }
+
+  .info__title {
+    padding-top: 75px;
+    padding-bottom: 145px;
+    font-size: 50px;
+    line-height: 55px;
+  }
 }

@@ -35,8 +35,8 @@
       <section class="info">
         <h2 class="info__title">Фотографии пользователей</h2>
       </section>
-      <div class="users-photo-wrapper">
-        <section class="users-photo">
+      <section class="users-photo">
+        <div class="users-photo-wrapper">
           <div class="users-photo__title-wrapper">
             <p class="users-photo__title">
               Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
@@ -168,66 +168,73 @@
               </p>
             </div>
           </article>
-        </section>
-      </div>
+        </div>
+      </section>
       <section class="add-photos">
         <h2 class="visually-hidden">Добавляй и редактируй свои фото в одно касание.</h2>
         <div class="add-photos__description-wrapper">
           <p class="add-photos__description">
-            Затмите их всех! Выкладывайте все, что накопилось в телефоне!
+            Затмите их всех!
+          </p>
+          <p class="add-photos__description">
+            Выкладывайте все, что накопилось в телефоне!
           </p>
         </div>
-        <div class="add-photos__img-wrapper">
-          <img class="add-photos__img" src="img/photo-road-mobile@1x.jpg" alt="Фото пользователя" width="280" height="374">
-        </div>
-        <div class="add-photos__form-wrapper">
-          <form class="add-photos__form" action="https://echo.htmlacademy.ru" method="get">
-            <ul class="add-photos__list">
-              <li class="add-photos__item add-photos__item--active">
-                <img class="add-photos__icon" src="http://placehold.it/44x44" alt="Иконка обрезки фотографии" width="44" height="44">
-                <input class="add-photos__range" type="range">
-              </li>
-              <li class="add-photos__item">
-                <img class="add-photos__icon" src="http://placehold.it/44x44" alt="Иконка обрезки фотографии" width="44" height="44">
-                <input class="add-photos__range add-photos__range" type="range">
-              </li>
-              <li class="add-photos__item">
-                <img class="add-photos__icon" src="http://placehold.it/44x44" alt="Иконка обрезки фотографии" width="44" height="44">
-                <input class="add-photos__range add-photos__range" type="range">
-              </li>
-            </ul>
-            <div class="add-photos__buttons">
-              <button class="link link--add-photos link--enabled" type="submit">Запостить</button>
-              <button class="link link--add-photos link--disabled" type="reset">Отменить</button>
-            </div>
-          </form>
+        <div class="add-photos__wrapper">
+          <div class="add-photos__img-wrapper">
+            <img class="add-photos__img" src="img/photo-road-mobile@1x.jpg" alt="Фото пользователя" width="280" height="374">
+          </div>
+          <div class="add-photos__form-wrapper">
+            <form class="add-photos__form" action="https://echo.htmlacademy.ru" method="get">
+              <ul class="add-photos__list">
+                <li class="add-photos__item add-photos__item--active">
+                  <img class="add-photos__icon" src="http://placehold.it/44x44" alt="Иконка обрезки фотографии" width="44" height="44">
+                  <input class="add-photos__range" type="range">
+                </li>
+                <li class="add-photos__item">
+                  <img class="add-photos__icon" src="http://placehold.it/44x44" alt="Иконка обрезки фотографии" width="44" height="44">
+                  <input class="add-photos__range add-photos__range" type="range">
+                </li>
+                <li class="add-photos__item">
+                  <img class="add-photos__icon" src="http://placehold.it/44x44" alt="Иконка обрезки фотографии" width="44" height="44">
+                  <input class="add-photos__range add-photos__range" type="range">
+                </li>
+              </ul>
+              <div class="add-photos__buttons">
+                <button class="link link--add-photos link--enabled" type="submit">Запостить</button>
+                <button class="link link--add-photos link--disabled" type="reset">Отменить</button>
+              </div>
+            </form>
+          </div>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__logo-wrapper">
-        <a class="footer__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <div class="footer__img-wrapper">
-            <img class="footer__img" src="img/logo-pink-blue-mobile.svg" alt="Логотип PINK" width="147" height="40">
-          </div>
-        </a>
-      </div>
-      <div class="footer__socials">
-        <ul class="footer__socials-list">
-          <li class="footer__socials-item">
-            <a class="footer__social-link footer__social-link--vkontakte" href="https://vk.com">Мы в Вконтакте</a>
-          </li>
-          <li class="footer__social-item">
-            <a class="footer__social-link footer__social-link--facebook" href="https://www.facebook.com">Мы в Фейсбуке</a>
-          </li>
-          <li class="footer__social-item">
-            <a class="footer__social-link footer__social-link--instagram" href="https://www.instagram.com">Мы в Инстаграме</a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__copyright">
-        <b class="footer__copyright-text">Разработано:</b>
-        <a class="footer__copyright-link footer__button" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/htmlacademy.svg" alt="Лого Академии" width="27" height="34"></a>
+      <div class="footer__wrapper">
+        <div class="footer__logo-wrapper">
+          <a class="footer__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <div class="footer__img-wrapper">
+              <img class="footer__img" src="img/logo-pink-blue-mobile.svg" alt="Логотип PINK" width="147" height="40">
+            </div>
+          </a>
+        </div>
+        <div class="footer__socials">
+          <ul class="footer__socials-list">
+            <li class="footer__socials-item">
+              <a class="footer__social-link footer__social-link--vkontakte" href="https://vk.com">Мы в Вконтакте</a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link footer__social-link--facebook" href="https://www.facebook.com">Мы в Фейсбуке</a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link footer__social-link--instagram" href="https://www.instagram.com">Мы в Инстаграме</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__copyright">
+          <b class="footer__copyright-text">Разработано:</b>
+          <a class="footer__copyright-link footer__button" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/htmlacademy.svg" alt="Лого Академии" width="27" height="34"></a>
+        </div>
       </div>
     </footer>
   </body>

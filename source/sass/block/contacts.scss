@@ -1,4 +1,6 @@
 .contacts {
+  width: 320px;
+  margin: 0 auto;
   padding-top: 45px;
   background-color: #ffffff;
 }
@@ -35,7 +37,34 @@
 }
 
 .contacts__map {
+  width: 320px;
+  height: 200px;
   margin-top: 45px;
   font-size: 0;
+  background-color: #f2f2f2;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    width: 660px;
+    box-sizing: border-box;
+  }
+
+  .contacts__map {
+    width: 660px;
+    height: 375px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    width: 1200px;
+    box-sizing: border-box;
+  }
+
+  .contacts__map {
+    width: 1200px;
+    height: 500px;
+  }
 }
