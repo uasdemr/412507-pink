@@ -35,3 +35,12 @@
     padding-right: 35px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .link {
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 21px;
+    line-height: 18px;
+  }
+}

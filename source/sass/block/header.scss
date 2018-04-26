@@ -1,22 +1,22 @@
 .header {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center 395px;
-  background-size: 320px 395px;
+  background-size: cover;
+  background-position: center 0;
+  //background-size: 320px 395px;
   box-sizing: border-box;
 }
 
 @media (min-width: $tablet-width) {
-  .header {
+  /*.header {
     background-image: url("../img/bg-back-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: center 240px;
     background-size: 660px 853px;
     background-clip: content-box;
-  }
+  }*/
 }
 
 @media (min-width: $desktop-width) {

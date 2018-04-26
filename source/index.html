@@ -7,11 +7,11 @@
   </head>
   <body>
     <header class="header">
-      <nav class="top-menu">
-        <button class="top-menu__toggle top-menu-button" type="button">Открыть</button>
+      <nav class="top-menu top-menu--closed top-menu--nojs">
+        <button class="top-menu__toggle top-menu-button" type="button"></button>
         <div class="top-menu__wrapper">
           <ul class="top-menu__list">
-            <li class="top-menu__item">
+            <li class="top-menu__item top-menu__item--active">
               <div class="top-menu__img-wrapper">
                 <img class="top-menu__img" src="img/logo-pink-white-mobile.svg" alt="Логотип PINK" width="75" height="22">
               </div>
@@ -34,13 +34,13 @@
       <section class="applets">
         <h2 class="visually-hidden">Приложения для телефонов на разных операционных системах</h2>
         <div class="applets__wrapper">
-          <p class="applets__title applets__title--hidden">
-            Взгляните на жизнь иначе!
-          </p>
-          <div class="applets__link-wrapper">
-            <a href="#" class="link applets__link">Скачать приложение</a>
-          </div>
-          <div class="applets__list-wrapper">
+          <div class="applets__content">
+            <p class="applets__title applets__title--hidden">
+              Взгляните на жизнь иначе!
+            </p>
+            <div class="applets__link-wrapper">
+              <a href="#" class="link applets__link">Скачать приложение</a>
+            </div>
             <ul class="applets__list">
               <li class="applets__item">
                 <img src="img/logo-apple.svg" alt="iPhone" width="47" height="56">
@@ -52,10 +52,10 @@
                 <img src="img/logo-microsoft.svg" alt="Windows Phone" width="44" height="41">
               </li>
             </ul>
+            <p class="applets__text">
+              Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+            </p>
           </div>
-          <p class="applets__text">
-            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-          </p>
         </div>
       </section>
     </header>
@@ -294,5 +294,6 @@
         <a class="footer__copyright-link footer__button" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </footer>
+    <script src="js/app.js"></script>
   </body>
 </html>
