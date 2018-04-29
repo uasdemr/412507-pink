@@ -1,0 +1,19 @@
+.map-wrapper {
+  font-size: 0;
+}
+
+.map__frame {
+  height: 200px;
+}
+
+@media (min-width: $tablet-width) {
+  .map__frame {
+    height: 375px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map__frame {
+    height: 500px;
+  }
+}

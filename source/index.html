@@ -13,6 +13,7 @@
           <ul class="top-menu__list">
             <li class="top-menu__item top-menu__item--active">
               <div class="top-menu__img-wrapper">
+
                 <img class="top-menu__img" src="img/logo-pink-white-mobile.svg" alt="Логотип PINK" width="75" height="22">
               </div>
             </li>
@@ -62,77 +63,93 @@
     <main class="main">
       <h1 class="visually-hidden">PINK - раскрась планету!</h1>
       <section class="information">
-        <h2 class="visually-hidden">
-          Информативный раздел сервиса. Узнай про нас!
-        </h2>
-        <div class="information__description-wrapper">
-          <p class="information__description">
-            Устали от серости мегаполиса?
-          </p>
-          <p class="information__description">
-            Нам есть, что вам предложить!
-          </p>
+        <div class="information__description">
+          <div class="container">
+            <p class="information__description-text">
+              Устали от серости мегаполиса?
+            </p>
+            <p class="information__description-text">
+              Нам есть, что вам <span>предложить!</span>
+            </p>
+          </div>
         </div>
-        <ul class="information__list">
-          <li class="information__item">
-            <h3 class="information__title">
-              Поднимает настроение
-            </h3>
-            <p class="information__text">
-              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
-            </p>
-          </li>
-          <li class="information__item">
-            <h3 class="information__title">Меняет мир вокруг</h3>
-            <p class="information__text">
-              Сделайте снимок и украсьте его смайликом или текстовой подписью, что бы усилить эффект
-            </p>
-          </li>
-          <li class="information__item">
-            <h3 class="information__title">Заводит новых друзей</h3>
-            <p class="information__text">
-              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-            </p>
-          </li>
-        </ul>
-        <article class="information__effect">
-          <h3 class="information__title">Эффект на 24 часа!</h3>
-          <p class="information__text">
-            Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
-          </p>
-          <a href="#" class="information__know">
-            Узнать больше об исследовании
-          </a>
-        </article>
-      </section>
-      <section class="reviews">
-        <div class="reviews__wrapper slider">
-          <h2 class="visually-hidden">Отзывы наших пользователей.</h2>
-          <ul class="reviews__list slider__list">
-            <li class="reviews__item slider__item">
-              <h3 class="reviews__name">Николай Петров</h3>
-              <p class="reviews__comment">
-                &laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
+        <div class="container">
+          <h2 class="visually-hidden">
+            Информативный раздел сервиса. Узнай про нас!
+          </h2>
+          <ul class="information__list">
+            <li class="information__item">
+              <h3 class="information__title">
+                Поднимает настроение
+              </h3>
+              <p class="information__text">
+                Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
               </p>
             </li>
-            <li class="reviews__item slider__item">
-              <h3 class="reviews__name">Петр Николаев</h3>
-              <p class="reviews__comment">
-                &laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
+            <li class="information__item">
+              <h3 class="information__title">Меняет мир вокруг</h3>
+              <p class="information__text">
+                Сделайте снимок и украсьте его смайликом или текстовой подписью, что бы усилить эффект
               </p>
             </li>
-            <li class="reviews__item slider__item">
-              <h3 class="reviews__name">Егор Пересветов</h3>
-              <p class="reviews__comment">
-                &laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
+            <li class="information__item">
+              <h3 class="information__title">Заводит новых друзей</h3>
+              <p class="information__text">
+                Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
               </p>
             </li>
           </ul>
-          <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle slider-button" type="button">1</button>
-            <button class="slider__toggle slider-button" type="button">2</button>
-            <button class="slider__toggle slider-button" type="button">3</button>
-          </p>
+        </div>
+      </section>
+      <section class="effect">
+        <div class="container">
+          <article class="effect__content">
+            <h3 class="effect__title">Эффект <span>на 24 часа!</span></h3>
+            <p class="effect__text">
+              Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
+            </p>
+            <a href="#" class="effect__know">
+              Узнать больше об исследовании
+            </a>
+          </article>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="container">
+          <div class="reviews__wrapper slider">
+            <h2 class="visually-hidden">Отзывы наших пользователей.</h2>
+            <ul class="reviews__list slider__list">
+              <li class="reviews__item slider__item">
+                <h3 class="reviews__name">Николай Петров
+                  <span>25 лет, водитель трамвая</span>
+                </h3>
+                <p class="reviews__comment">
+                  &laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
+                </p>
+              </li>
+              <li class="reviews__item reviews__item--hidden slider__item">
+                <h3 class="reviews__name">Петр Николаев
+                  <span>35 лет, биолог</span>
+                </h3>
+                <p class="reviews__comment">
+                  &laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
+                </p>
+              </li>
+              <li class="reviews__item reviews__item--hidden slider__item">
+                <h3 class="reviews__name">Егор Пересветов
+                  <span>40 лет, учитель гимназии</span>
+                </h3>
+                <p class="reviews__comment">
+                  &laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
+                </p>
+              </li>
+            </ul>
+            <p class="reviews__toggles slider__toggles">
+              <button class="slider__toggle slider-button slider-button--active" type="button"></button>
+              <button class="slider__toggle slider-button" type="button"></button>
+              <button class="slider__toggle slider-button" type="button"></button>
+            </p>
+          </div>
         </div>
       </section>
       <section class="cost">
@@ -216,82 +233,90 @@
             </tr>
           </table>
           <p class="cost__toggles slider__toggles">
-            <button class="cost-button slider__toggle" type="button">1</button>
-            <button class="cost-button slider__toggle" type="button">2</button>
-            <button class="cost-button slider__toggle" type="button">3</button>
+            <button class="slider__toggle slider-button" type="button"> </button>
+            <button class="slider__toggle slider-button slider-button--active" type="button"> </button>
+            <button class="slider__toggle slider-button" type="button"> </button>
           </p>
         </div>
       </section>
       <section class="contacts">
-        <div class="contacts__title-wrapper">
-          <p class="contacts__title">
-            Остались вопросы?
-          </p>
-          <p class="contacts__title">
-            Свяжитесь с нами!
-          </p>
+        <div class="container">
+          <div class="contacts__wrapper">
+            <div class="contacts__title-wrapper">
+              <p class="contacts__title">
+                Остались вопросы?
+              </p>
+              <p class="contacts__title">
+                Свяжитесь с нами!
+              </p>
+            </div>
+            <div class="contacts__contact-wrapper">
+              <div class="contacts__addres-wrapper">
+                <p class="contacts__text">
+                  Звоните:
+                </p>
+                <p class="contacts__box">
+                  <a class="contacts__box-item" href="tel:+78125556666">
+                    +7 (812) 555-66-66
+                  </a>
+                </p>
+              </div>
+              <div class="contacts__addres-wrapper">
+                <p class="contacts__text">
+                  Пишите:
+                </p>
+                <p class="contacts__box">
+                  <a class="contacts__box-item" href="mailto:mail@htmlacademy.ru">
+                    mail@htmlacademy.ru
+                  </a>
+                </p>
+              </div>
+              <div class="contacts__addres-wrapper">
+                <p class="contacts__text">
+                  Приезжайте в гости:
+                </p>
+                <p class="contacts__box">
+                  <span class="contacts__box-item">
+                    ул. Большая Конюшенная, 19/8
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="contacts__contact-wrapper">
-          <div class="contacts__addres-wrapper">
-            <p class="contacts__text">
-              Звоните:
-            </p>
-            <p class="contacts__box">
-              <a class="contacts__box-item" href="tel:+78125556666">
-                +7 (812) 555-66-66
-              </a>
-            </p>
-          </div>
-          <div class="contacts__addres-wrapper">
-            <p class="contacts__text">
-              Пишите:
-            </p>
-            <p class="contacts__box">
-              <a class="contacts__box-item" href="mailto:mail@htmlacademy.ru">
-                mail@htmlacademy.ru
-              </a>
-            </p>
-          </div>
-          <div class="contacts__addres-wrapper">
-            <p class="contacts__text">
-              Приезжайте в гости:
-            </p>
-            <p class="contacts__box">
-              <span class="contacts__box-item">
-                ул. Большая Конюшенная, 19/8
-              </span>
-            </p>
-          </div>
-        </div>
-        <div class="contacts__map">
-          <!-- <img src="http://placehold.it/320x200" alt="Карта" width="320" height="200"> -->
+      </section>
+      <section class="map">
+        <div class="map-wrapper">
+          <iframe class="map__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424177667!2d30.32088925178036!3d59.938796868958846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1524837493238" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
       </section>
     </main>
-    <footer class="footer footer--hidden">
-      <div class="footer__logo-wrapper">
-        <a class="footer__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <div class="footer__img-wrapper">
-            <img class="footer__img" src="http://placehold.it/45x30" alt="Логотип PINK">
-          </div>
-        </a>
-      </div>
-      <div class="footer__socials">
-        <ul class="footer__socials-list">
-          <li class="footer__socials-item">
-            <a class="footer__social-link footer__social-link--vkontakte" href="https://vk.com">Мы в Вконтакте</a>
-          </li>
-          <li class="footer__social-item">
-            <a class="footer__social-link footer__social-link--facebook" href="https://www.facebook.com">Мы в Фейсбуке</a>
-          </li>
-          <li class="footer__social-item">
-            <a class="footer__social-link footer__social-link--instagram" href="https://www.instagram.com">Мы в Инстаграме</a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__copyright">
-        <b class="footer__copyright-text">Разработано:</b>
-        <a class="footer__copyright-link footer__button" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    <footer class="footer">
+      <div class="footer__wrapper footer__wrapper--hidden">
+        <div class="footer__logo-wrapper">
+          <a class="footer__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <div class="footer__img-wrapper">
+              <img class="footer__img" src="http://placehold.it/45x30" alt="Логотип PINK">
+            </div>
+          </a>
+        </div>
+        <div class="footer__socials">
+          <ul class="footer__socials-list">
+            <li class="footer__socials-item">
+              <a class="footer__social-link footer__social-link--vkontakte" href="https://vk.com">Мы в Вконтакте</a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link footer__social-link--facebook" href="https://www.facebook.com">Мы в Фейсбуке</a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link footer__social-link--instagram" href="https://www.instagram.com">Мы в Инстаграме</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__copyright">
+          <b class="footer__copyright-text">Разработано:</b>
+          <a class="footer__copyright-link footer__button" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
       </div>
     </footer>
     <script src="js/app.js"></script>

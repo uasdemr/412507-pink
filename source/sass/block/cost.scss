@@ -1,8 +1,13 @@
+.cost {
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
 .cost__wrapper {
   width: 320px;
   margin: 0 auto;
+  padding-top: 85px;
   overflow: hidden;
-  background-color: #f2f2f2;
 }
 
 .table {
@@ -20,7 +25,10 @@
 
 .table__title {
   min-width: 280px;
-  height: 80px;
+  //height: 95px;
+  padding-top: 18px;
+  padding-bottom: 20px;
+  line-height: 30px;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
@@ -43,13 +51,17 @@
 
 .table__title-costs {
   display: block;
-  font-weight: normal;
+  font-size: 24px;
+  font-weight: lighter;
 }
 
 .table__column {
   height: 59px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 14px;
   text-align: center;
-  vertical-align: center;
+  text-transform: uppercase;
   border-left: 2px solid #e5e5e5;
   background-color: #ffffff;
 
@@ -74,18 +86,16 @@
 
 .cost__toggles {
   margin: 0;
-  height: 100px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 45px;
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
   .cost__wrapper {
+    width: 660px;
     padding-top: 85px;
     padding-bottom: 68px;
-    width: 660px;
   }
 
   .table {
