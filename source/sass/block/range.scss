@@ -1,0 +1,59 @@
+.range-filter {
+  width: 284px;
+  position: absolute;
+  left: -41px;
+  bottom: -28px;
+}
+.range-controls {
+  position: relative;
+  height: 19px;
+  padding-top: 17px;
+  padding-right: 22px;
+  padding-left: 22px;
+}
+.range-controls .scale {
+  height: 2px;
+  background: #283645;
+}
+.range-controls .toggle {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  position: absolute;
+  top: 11px;
+  left: 0;
+  border: 2px solid red;
+  background-color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.range-controls .toggle-control {
+  left: 215px;
+}
+
+@media (min-width: $tablet-width) {
+  .range-filter {
+    position: static;
+    width: 220px;
+    margin-left: 30px;
+  }
+
+  .range-controls {
+    padding-left: 0;
+    padding-right: 18px;
+    padding-top: 9px;
+  }
+
+  .range-controls .toggle-control {
+    top: 3px;
+    left: 146px;
+
+    &--fill {
+      left: 25px;
+    }
+
+    &--brightest {
+      left: 96px;
+    }
+  }
+}
