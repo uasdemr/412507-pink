@@ -4,6 +4,7 @@
   left: -41px;
   bottom: -28px;
 }
+
 .range-controls {
   position: relative;
   height: 19px;
@@ -11,10 +12,12 @@
   padding-right: 22px;
   padding-left: 22px;
 }
+
 .range-controls .scale {
   height: 2px;
   background: #283645;
 }
+
 .range-controls .toggle {
   width: 10px;
   height: 10px;
@@ -27,6 +30,7 @@
   border-radius: 50%;
   cursor: pointer;
 }
+
 .range-controls .toggle-control {
   left: 215px;
 }

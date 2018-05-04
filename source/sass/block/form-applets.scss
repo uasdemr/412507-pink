@@ -5,31 +5,127 @@
 .form-applets__wrapper {
   width: 320px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 38px;
+  padding-bottom: 40px;
   box-sizing: border-box;
 }
 
 .form-applets__description {
   margin: 0;
   font-size: 14px;
-  line-height: 30px;
+  line-height: 18px;
   text-transform: uppercase;
   text-align: center;
   color: $main-description-color;
+
+  span {
+    display: block;
+  }
 }
 
 .form-applets__label-wrapper {
+  min-height: 190px;
   margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form-applets__label {
+  min-height: 39px;
+  display: flex;
+  align-items: center;
+}
+
+.form-applets__radio {
+  opacity: 0;
+  position: absolute;
+  left: -9999px;
+}
+
+.form-applets__indicator {
+  width: 35px;
+  height: 35px;
+  position: relative;
+  display: inline-block;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked + .form-applets__indicator::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  border: 6px solid #d22856;
+  background-color: #d22856;
+}
+
+.form-applets__text {
+  margin-left: 30px;
 }
 
 @media (min-width: $tablet-width) {
+  .form-applets {
+    background-color: #ffffff;
+  }
+
   .form-applets__wrapper {
+    position: relative;
     width: 660px;
+    padding-top: 25px;
+    padding-bottom: 56px;
+  }
+
+  .form-applets__description {
+    width: 380px;
+    position: absolute;
+    left: 21%;
+    top: 17px;
+    background-color: #ffffff;
+
+    span {
+      display: inline;
+    }
+  }
+
+  .form-applets__label-wrapper {
+    padding-top: 52px;
+    padding-bottom: 53px;
+    padding-left: 57px;
+    margin: 0;
+    border: 2px solid #e5e5e5;
+  }
+
+  .form-applets__text {
+    margin-left: 21px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .form-applets {
+    width: 470px;
+    margin-top: 29px;
+    background-color: #ffffff;
+  }
+
   .form-applets__wrapper {
-    width: 960px;
+    width: auto;
+    padding-left: 42px;
+    padding-right: 0;
+  }
+
+  .form-applets__description {
+    left: 15%;
+  }
+
+  .form-applets__label-wrapper {
+    padding-left: 75px;
   }
 }

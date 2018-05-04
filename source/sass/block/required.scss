@@ -1,5 +1,5 @@
 .required {
-  padding-top: 40px;
+  padding-top: 35px;
   background-color: #ffffff;
 }
 
@@ -7,6 +7,25 @@
   margin: 0;
   font-size: 14px;
   line-height: 30px;
-  color: $main-text-color;
   text-align: center;
+  text-transform: uppercase;
+  color: $main-text-color;
+
+  span {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .required {
+    padding-top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .required__description {
+    span {
+      display: inline;
+    }
+  }
 }

@@ -3,8 +3,9 @@
 }
 
 .info__title {
+  min-height: 140px;
   margin: 0;
-  padding: 30px 20px 83px 20px;
+  padding: 30px 20px 0 20px;
   font-size: 24px;
   line-height: 28px;
   font-weight: lighter;
@@ -19,8 +20,8 @@
   }
 
   .info__title {
+    min-height: 260px;
     padding-top: 68px;
-    padding-bottom: 140px;
     font-size: 50px;
     line-height: 60px;
     letter-spacing: -1px;
@@ -29,10 +30,10 @@
 
 @media (min-width: $desktop-width) {
   .info__title {
+    min-height: 221px;
     padding-top: 65px;
-    padding-bottom: 101px;
-    padding-left: 176px;
-    padding-right: 160px;
+    padding-left: 90px;
+    padding-right: 75px;
     font-size: 50px;
     line-height: 60px;
   }
