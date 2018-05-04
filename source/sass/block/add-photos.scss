@@ -138,8 +138,58 @@
     background-color: #ffffff;
   }
 
+  .add-photos__container {
+    justify-content: flex-start;
+    background-color: #f2f2f2;
+    padding-bottom: 15px;
+  }
 
   .add-photos__img-wrapper {
     padding-left: 60px;
+  }
+
+  .add-photos__description-wrapper {
+    padding-top: 43px;
+    padding-bottom: 66px;
+  }
+
+  .add-photos__description {
+    margin-left: 17px;
+  }
+
+  .add-photos__img-wrapper {
+    padding-left: 88px;
+  }
+
+  .add-photos__form-wrapper {
+    margin-left: 63px;
+  }
+
+  .add-photos__list {
+    padding-left: 30px;
+  }
+
+  .add-photos__item {
+    padding-top: 0;
+    padding-bottom: 11px;
+    padding-right: 10px;
+  }
+
+  .add-photos__icon-wrapper {
+    width: 44px;
+    height: 44px;
+    margin-left: 0;
+  }
+
+  .add-photos__buttons {
+    padding-left: 30px;
+    padding-right: 0;
+    padding-top: 102px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .link--add-photos {
+    margin: 0;
   }
 }

@@ -25,6 +25,7 @@
   &--disabled {
     margin-top: 12px;
     color: #283645;
+    background-color: #f2f2f2;
     border-color: #dddfe0;
   }
 }
@@ -42,9 +43,9 @@
 
 @media (min-width: $desktop-width) {
   .link {
-    padding-left: 28px;
-    padding-right: 28px;
-    font-size: 21px;
+    padding-left: 39px;
+    padding-right: 39px;
+    font-size: 18px;
     line-height: 18px;
   }
 }

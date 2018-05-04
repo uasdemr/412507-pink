@@ -28,5 +28,16 @@
   .photo-description__break {
     display: inline;
   }
+}
 
+@media (min-width: $desktop-width) {
+  .photo-description__title {
+    padding-top: 92px;
+    padding-bottom: 88px;
+    padding-left: 107px;
+  }
+
+  .photo-description__box {
+    display: block;
+  }
 }

@@ -69,8 +69,8 @@ body {
   }
 
   .user-photo__img {
-    width: 300px;
-    height: 300px;
+    min-width: 300px;
+    min-height: 300px;
   }
 
   .user-photo__content {
@@ -98,5 +98,17 @@ body {
 }
 
 @media (min-width: $desktop-width) {
+  .user-photo__wrapper {
+    padding-top: 0px;
+    padding-bottom: 19px;
+  }
 
+  .user-photo__img {
+    min-height: 400px;
+  }
+
+  .user-photo {
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
 }

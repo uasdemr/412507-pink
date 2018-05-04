@@ -28,14 +28,12 @@
 }
 
 @media (min-width: $desktop-width) {
-  .info {
-    //width: 1200px;
-  }
-
   .info__title {
-    padding-top: 75px;
-    padding-bottom: 145px;
+    padding-top: 65px;
+    padding-bottom: 101px;
+    padding-left: 176px;
+    padding-right: 160px;
     font-size: 50px;
-    line-height: 55px;
+    line-height: 60px;
   }
 }

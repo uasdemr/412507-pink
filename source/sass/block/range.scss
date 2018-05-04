@@ -57,3 +57,27 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .range-filter {
+    width: 306px;
+    margin-left: 47px;
+  }
+
+  .range-controls {
+    padding-top: 20px;
+  }
+
+  .range-controls .toggle-control {
+    top: 14px;
+    left: 71px;
+
+    &--fill {
+      left: 247px;
+    }
+
+    &--brightest {
+      left: 160px;
+    }
+  }
+}

@@ -109,3 +109,17 @@
     margin-right: 18px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .panorama {
+    padding-bottom: 0;
+  }
+
+  .panorama__img {
+    min-height: 507px;
+  }
+
+  .panorama__content {
+    padding-top: 20px;
+  }
+}
