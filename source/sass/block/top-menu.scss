@@ -1,6 +1,21 @@
 .top-menu {
-  width: 320px;
-  margin: 0 auto;
+  position: relative;
+  min-height: 68px;
+  background-color: transparent;
+}
+
+.top-menu-button {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  z-index: 2;
+
+  display: block;
+  width: 50px;
+  height: 24px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
 }
 
 .top-menu__list {
@@ -9,59 +24,174 @@
 }
 
 .top-menu__item {
+  //min-height: 69px;
+  vertical-align: middle;
   list-style-type: none;
-  border-top: 1px solid #485461;
-  border-bottom: 1px solid transparent;
+  background-color: #283645;
+  border-bottom: 1px solid #010101;
+  box-shadow: inset 0 1px 1px 0 rgba(72, 84, 97, 1);
 }
 
-.top-menu__item:first-child {
-  border-top: none;
-  background-color: $main-text-color;
+
+.top-menu__item:hover {
+  box-shadow: none;
 }
 
-.top-menu__img {
-  padding: 20px 20px;
+.top-menu__item:active {
+  box-shadow: inset 0 2px 4px 0 rgba(72, 84, 97, 1);
+}
+
+.top-menu__svg-wrapper {
+  padding: 22px 20px;
+  font-size: 0;
+  background-color: #283645;
+}
+
+.top-menu__svg path {
+  fill: #ffffff;
+}
+
+.top-menu__svg-glasses {
+  display: none;
 }
 
 .top-menu__link {
   display: block;
-  padding: 20px 20px;
+  padding: 16px 20px;
   line-height: 32px;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-  background-color: $main-text-color;
+  //background-color: $main-text-color;
   color: #ffffff;
 }
 
+@media (max-width: $mobile-tablet-width) {
+  .top-menu--closed .top-menu__item {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+
+  .top-menu--closed .top-menu-button::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
+  }
+
+  .top-menu--closed .top-menu-button:hover::before {
+    background-color: rgba(210, 40, 86, 1);
+    box-shadow: 0 8px 0 0 rgba(210, 40, 86, 1), 0 16px 0 0 rgba(210, 40, 86, 1);
+  }
+
+  .top-menu--closed .top-menu-button:active::before {
+    background-color: rgba(210, 40, 86, 0.3);
+    box-shadow: 0 8px 0 0 rgba(210, 40, 86, 0.3), 0 16px 0 0 rgba(210, 40, 86, 0.3);
+  }
+
+  .top-menu--opened .top-menu-button {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 4px;
+      background-color: #ffffff;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &:hover::before,
+    &:hover::after {
+      background-color: rgba(210, 40, 86, 1);
+    }
+
+    &:active::before,
+    &:active::after {
+      background-color: rgba(210, 40, 86, 0.3);
+    }
+  }
+
+  .top-menu--nojs .top-menu-button {
+    display: none;
+  }
+
+  .top-menu--nojs .top-menu__item {
+    display: block;
+  }
+}
+
 @media (min-width: $tablet-width) {
-  .top-menu {
-    width: 660px;
+  .top-menu__svg-wrapper {
+    padding-top: 27px;
+    padding-bottom: 41px;
+  }
+
+  .top-menu__svg-glasses {
+    display: inline-block;
+  }
+
+  .top-menu__svg-pink {
+    display: none;
+  }
+
+  .top-menu-button {
+    top: 45px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .top-menu {
-    width: 940px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .top-menu__wrapper {
+    display: flex;
+    width: 960px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+  }
+
+  .top-menu__svg-wrapper {
+    padding-left: 8px;
+    background-color: transparent;
   }
 
   .top-menu__list {
+    width: 620px;
+    margin-left: auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .top-menu__item {
     border: none;
-    background-color: rgba(113, 201, 80, 0.2);
-  }
-
-  .top-menu__item:first-child {
-    flex-grow: 1;
-    background-color: rgba(113, 201, 80, 0.2);
+    box-shadow: none;
+    color: #ffffff;
+    background-color: transparent;
   }
 
   .top-menu__link {
+    padding-left: 0;
+    padding-right: 0;
     font-size: 18px;
     line-height: 18px;
     font-weight: normal;

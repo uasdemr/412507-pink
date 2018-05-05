@@ -1,32 +1,39 @@
 /*global*/
 @import "../sass/common/normalize.scss";
 @import "../sass/common/fonts.scss";
-@import "../sass/common/common.scss";
 @import "../sass/common/variables.scss";
+@import "../sass/common/common.scss";
 /*end of global*/
 
+@import "../sass/block/container.scss";
 @import "../sass/block/header.scss";
 @import "../sass/block/main.scss";
 @import "../sass/block/footer.scss";
 
 /*index.html*/
+@import "../sass/block/slider.scss";
+@import "../sass/block/slider-button.scss";
 @import "../sass/block/top-menu.scss";
 @import "../sass/block/top-menu-button.scss";
 @import "../sass/block/applets.scss";
+@import "../sass/block/main-description.scss";
 @import "../sass/block/link.scss";
 @import "../sass/block/information.scss";
+@import "../sass/block/effect.scss";
 @import "../sass/block/reviews.scss";
-@import "../sass/block/slider.scss";
-@import "../sass/block/slider-button.scss";
 @import "../sass/block/cost.scss";
 @import "../sass/block/cost-button.scss";
 @import "../sass/block/contacts.scss";
+@import "../sass/block/map.scss";
 /*end of index.html*/
 
 /*photo.html*/
 @import "../sass/block/info.scss";
-@import "../sass/block/users-photo.scss";
+@import "../sass/block/photo-description.scss";
+@import "../sass/block/gallery.scss";
+@import "../sass/block/panorama.scss";
 @import "../sass/block/add-photos.scss";
+@import "../sass/block/range.scss";
 /*end of photo.html*/
 
 /*form.html*/

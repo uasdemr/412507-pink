@@ -1,12 +1,11 @@
 .form__button-wrapper {
-  padding-top: 8px;
-  //text-align: center;
+  padding-top: 4px;
   background-color: #ffffff;
 }
 
 .form-button {
   display: inline-block;
-  padding: 25px 46px 25px 46px;
+  padding: 22px 47px 23px 47px;
   font-size: 18px;
   line-height: 18px;
   font-weight: bold;
@@ -15,6 +14,16 @@
   color: #ffffff;
   background-color: #2aab6d;
   border: none;
-  border-radius: 5px;
+  border-radius: 3px;
   box-sizing: border-box;
+}
+
+@media (min-width: $tablet-width) {
+  .form__button-wrapper {
+    padding-top: 0;
+  }
+
+  .form-button {
+    padding: 22px 57px 23px 58px;
+  }
 }

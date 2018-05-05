@@ -25,13 +25,27 @@
   &--disabled {
     margin-top: 12px;
     color: #283645;
+    background-color: #f2f2f2;
     border-color: #dddfe0;
   }
 }
 
 @media (min-width: $tablet-width) {
   .link {
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-left: 78px;
+    padding-right: 78px;
+
+    &--disabled {
+      margin-top: 27px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .link {
+    padding-left: 39px;
+    padding-right: 39px;
+    font-size: 18px;
+    line-height: 18px;
   }
 }

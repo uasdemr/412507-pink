@@ -1,5 +1,4 @@
 .personal {
-  padding-bottom: 42px;
   background-color: #ffffff;
   box-sizing: border-box;
 }
@@ -7,14 +6,28 @@
 .personal__wrapper {
   width: 320px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding-top: 9px;
+  padding-bottom: 42px;
+  padding-left: 20px;
+  padding-right: 20px;
   box-sizing: border-box;
 }
 
+.personal__label {
+  display: block;
+  margin-top: 14px;
+}
+
+.personal__label:first-child {
+  margin-top: 0;
+}
+
 .personal__acronym {
-  margin-top: 25px;
-  margin-bottom: 15px;
-  padding: 0 20px;
+  display: block;
+  padding: 0 22px;
+  padding-bottom: 6px;
+  font-size: 14px;
+  line-height: 30px;
   text-transform: uppercase;
   color: $main-description-color;
 }
@@ -22,11 +35,31 @@
 @media (min-width: $tablet-width) {
   .personal__wrapper {
     width: 660px;
+    padding-top: 46px;
+  }
+
+  .personal__label {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+  }
+
+  .personal__acronym {
+    padding-left: 0;
+    padding-right: 19px;
+    padding-bottom: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .personal {
+    width: 470px;
+    margin-top: 13px;
+  }
+
   .personal__wrapper {
-    width: 960px;
+    width: auto;
+    padding-left: 10px;
+    padding-right: 26px;
   }
 }

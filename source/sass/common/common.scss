@@ -10,12 +10,15 @@ img {
   height: auto;
 }
 
-input {
-  padding: 20px;
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  width: 100%;
+  padding: 15px 19px;
   font-size: 18px;
   line-height: 30px;
   color: #283645;
-  border: 1px solid #757575;
+  border: 2px solid #e5e5e5;
   box-sizing: border-box;
 }
 
@@ -25,4 +28,11 @@ input {
   width: 1px;
   height: 1px;
   margin: -1px;
+}
+
+@media (min-width: $tablet-width) {
+  input[type="tel"],
+  input[type="email"] {
+    padding-right: 60px;
+  }
 }

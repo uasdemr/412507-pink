@@ -3,27 +3,40 @@
 }
 
 .description__wrapper {
-  width: 320px;
-  margin: 0 auto;
-  padding: 50px 20px 25px 20px;
+  margin: 0;
+  padding: 44px 0 25px 0;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
   color: $main-text-color;
   box-sizing: border-box;
+
+  span {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .description__wrapper {
-    width: 660px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 91px;
     font-size: 18px;
+
+    span {
+      display: block;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .description__wrapper {
-    width: 960px;
-    padding-left: 190px;
-    padding-right: 190px;
+    padding-left: 84px;
+    padding-right: 70px;
+    padding-top: 92px;
+
+    span {
+      display: inline;
+    }
   }
 }

@@ -5,36 +5,135 @@
 .achievements__wrapper {
   width: 320px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 38px 20px 40px 20px;
   box-sizing: border-box;
 }
 
 .achievements__description {
   margin: 0;
+  padding-bottom: 39px;
   font-size: 14px;
   line-height: 18px;
+  text-align: center;
   text-transform: uppercase;
   color: $main-description-color;
+
+  span {
+    display: block;
+  }
 }
 
 .achievements__label-wrapper {
-  margin-top: 40px;
+  //margin-top: 40px;
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.achievements__label {
+  min-height: 39px;
+  display: flex;
+  align-items: center;
 }
 
 .achievements__text {
+  margin-left: 30px;
   font-size: 18px;
   line-height: 30px;
   color: #283645;
 }
 
+.achievements__input {
+  opacity: 0;
+  position: absolute;
+  left: -9999px;
+}
+
+.achievements__indicator {
+  width: 35px;
+  height: 35px;
+  position: relative;
+  display: inline-block;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-radius: 2px;
+}
+
+input[type="checkbox"]:checked + .achievements__indicator::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 13px;
+  width: 8px;
+  height: 20px;
+  border-right: 2px solid #d22856;
+  border-bottom: 2px solid #d22856;
+  transform: rotate(45deg);
+}
+
 @media (min-width: $tablet-width) {
+  .achievements {
+    background-color: #ffffff;
+  }
+
   .achievements__wrapper {
+    position: relative;
     width: 660px;
+    padding-top: 21px;
+  }
+
+  .achievements__description {
+    position: absolute;
+    left: 17.5%;
+    top: 14px;
+    width: 430px;
+    background-color: #ffffff;
+    padding-bottom: 0;
+
+    span {
+      display: inline;
+    }
+  }
+
+  .achievements__label-wrapper {
+    padding-left: 58px;
+    padding-top: 52px;
+    padding-bottom: 48px;
+    border: 2px solid #e5e5e5;
+  }
+
+  .achievements__text {
+    margin-left: 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .achievements {
+    background-color: #ffffff;
+  }
+
   .achievements__wrapper {
     width: 960px;
+    padding-right: 0;
+  }
+
+  .achievements__description {
+    left: 28.5%;
+  }
+
+  .achievements__label-wrapper {
+    min-height: 163px;
+    padding-top: 54px;
+    padding-left: 57px;
+    padding-bottom: 13px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .achievements__label {
+    height: 39px;
+    min-width: 260px;
   }
 }

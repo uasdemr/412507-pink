@@ -5,7 +5,7 @@
 .area__wrapper {
   width: 320px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 33px 20px 40px 20px;
   box-sizing: border-box;
 }
 
@@ -20,22 +20,69 @@
 
 .form__textarea-wrapper {
   text-align: center;
+  margin-top: 10px;
 }
 
 .area__area {
   width: 100%;
-  margin-top: 20px;
+  height: 200px;
+  padding: 15px 20px 20px 20px;
+  font-size: 18px;
+  line-height: 30px;
   box-sizing: border-box;
 }
 
 @media (min-width: $tablet-width) {
   .area__wrapper {
     width: 660px;
+    padding-top: 25px;
+    //padding-bottom: 25px;
+    position: relative;
+  }
+
+  .area__description {
+    position: absolute;
+    left: 31%;
+    width: 250px;
+    right: 0;
+    top: 10px;
+    background-color: #ffffff;
+  }
+
+  .form__textarea-wrapper {
+    margin: 0 auto;
+    padding-top: 45px;
+    padding-bottom: 46px;
+    border: 2px solid #e5e5e5;
+  }
+
+  .area__area {
+    width: 81%;
+    height: 192px;
+    padding: 13px 20px 20px 18px;
+    border: 2px solid #e5e5e5;
   }
 }
 
 @media (min-width: $desktop-width) {
   .area__wrapper {
     width: 960px;
+    padding-top: 25px;
+    padding-right: 0;
+  }
+
+  .area__description {
+    left: 38%;
+    width: 250px;
+  }
+
+  .form__textarea-wrapper {
+    padding-top: 42px;
+    padding-bottom: 40px;
+  }
+
+  .area__area {
+    height: 127px;
+    width: 820px;
   }
 }

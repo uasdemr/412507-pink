@@ -1,11 +1,21 @@
-.reviews__wrapper {
-  width: 320px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 45px;
+.reviews {
   background-color: #ffffff;
-  box-sizing: border-box;
+  position: relative;
+}
+
+.reviews::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  min-height: 50%;
+  background-color: transparent;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+}
+
+.reviews__wrapper {
+  padding-top: 44px;
+  padding-bottom: 45px;
 }
 
 .reviews__list {
@@ -14,8 +24,11 @@
 }
 
 .reviews__item {
-  padding-top: 50px;
   list-style-type: none;
+
+  &--hidden {
+    display: none;
+  }
 }
 
 .reviews__name {
@@ -23,10 +36,15 @@
   font-size: 18px;
   line-height: 30px;
   text-align: center;
+
+  span {
+    display: none;
+  }
 }
 
 .reviews__comment {
   margin: 0;
+  padding-top: 12px;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
@@ -35,18 +53,67 @@
 
 .reviews__toggles {
   margin: 0;
-  margin-top: 35px;
+  padding-top: 23px;
   text-align: center;
 }
 
 @media (min-width: $tablet-width) {
   .reviews__wrapper {
-    width: 660px;
+    padding-top: 13px;
+    padding-bottom: 25px;
+  }
+
+  .reviews__item {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 0;
+
+    &--hidden {
+      display: none;
+    }
+  }
+
+  .reviews__name {
+    padding-top: 35px;
+    font-size: 20px;
+    line-height: 30px;
+
+    span {
+      display: block;
+      font-size: 14px;
+      font-weight: normal;
+      line-height: 30px;
+    }
+  }
+
+  .reviews__comment {
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .reviews__wrapper {
-    width: 1200px;
+    padding-top: 130px;
+  }
+
+  .reviews__list {
+    width: 690px;
+    margin: 0 auto;
+    padding-top: 40px;
+  }
+
+  .reviews__name {
+    padding-top: 32px;
+    font-size: 24px;
+    line-height: 37px;
+
+    span {
+      font-size: 18px;
+    }
+  }
+
+  .reviews__toggles {
+    display: none;
   }
 }
