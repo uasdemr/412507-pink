@@ -8,9 +8,7 @@
   box-sizing: border-box;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dpi) {
-      background-image: url("../img/bg-back-mobile@2x.jpg");
-      //background-size: 1400px auto;
-      //background-position: center -35px;
+    background-image: url("../img/bg-back-mobile@2x.jpg");
   }
 }
 
@@ -18,13 +16,11 @@
   .header {
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-position: center 0;
-    //background-size: 660px 853px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dpi) {
-        background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-image: url("../img/bg-back-tablet@2x.jpg");
     }
   }
-
 }
 
 @media (min-width: $desktop-width) {
@@ -33,7 +29,7 @@
     background-position: center 0;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dpi) {
-        background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-image: url("../img/bg-back-desktop@2x.jpg");
     }
   }
 }

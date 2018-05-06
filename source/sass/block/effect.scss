@@ -24,11 +24,33 @@
     display: block;
   }
 
+  .effect__wrapper {
+    display: flex;
+  }
+
+  .effect__timer-wrapper {
+    min-width: 300px;
+  }
+
+  .effect__timer {
+    margin: 0;
+    padding-top: 116px;
+    padding-left: 64px;
+    padding-bottom: 40px;
+    font-size: 96px;
+    line-height: 186px;
+    color: $main-description-color;
+    background-image: url("../img/icon-editor-diagram-fill.svg"), url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-size: 202px 202px, 239px 276px;
+    background-position: 19px 113px, 0 57px;
+    box-sizing: border-box;
+  }
+
   .effect__content {
-    padding-left: 310px;
+    margin-left: 10px;
     padding-top: 95px;
     padding-bottom: 100px;
-    //padding-right: 20px;
   }
 
   .effect__know {
@@ -63,9 +85,28 @@
     background-color: #f2f2f2;
   }
 
+  .effect__timer-wrapper {
+    min-width: 370px;
+  }
+
+  .effect__timer {
+    margin: 0;
+    padding-top: 102px;
+    padding-left: 88px;
+    padding-bottom: 65px;
+    font-size: 120px;
+    line-height: 186px;
+    color: $main-description-color;
+    background-image: url("../img/icon-editor-diagram-fill.svg"), url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-size: 253px 253px, 299px 345px;
+    background-position: 32px 75px, 8px 6px;
+    box-sizing: border-box;
+  }
+
   .effect__content {
     margin: 0 auto;
-    padding-left: 375px;
+    margin-left: 5px;
     padding-top: 100px;
     padding-bottom: 115px;
     padding-right: 50px;

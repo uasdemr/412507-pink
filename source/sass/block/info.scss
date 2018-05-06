@@ -3,7 +3,7 @@
 }
 
 .info__title {
-  min-height: 140px;
+  min-height: 172px;
   margin: 0;
   padding: 30px 20px 0 20px;
   font-size: 24px;
@@ -15,10 +15,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .info {
-    //width: 660px;
-  }
-
   .info__title {
     min-height: 260px;
     padding-top: 68px;
