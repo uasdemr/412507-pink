@@ -1,18 +1,10 @@
 .information__description {
-  padding-top: 41px;
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 7px;
+  letter-spacing: -0.5px;
   background-color: #ffffff;
   box-sizing: border-box;
-  position: relative;
-}
-
-.information__description::after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  min-height: 27%;
-  background-color: transparent;
-  background-image: url("../img/bg-triangle-white.svg");
-  background-repeat: no-repeat;
 }
 
 .information__description-text {

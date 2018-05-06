@@ -3,7 +3,7 @@
   position: relative;
 }
 
-.reviews::after {
+/*.reviews::after {
   position: absolute;
   content: "";
   width: 100%;
@@ -11,11 +11,11 @@
   background-color: transparent;
   background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
-}
+}*/
 
 .reviews__wrapper {
   padding-top: 44px;
-  padding-bottom: 45px;
+  padding-bottom: 39px;
 }
 
 .reviews__list {

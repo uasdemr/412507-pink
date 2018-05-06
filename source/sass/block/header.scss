@@ -4,26 +4,32 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center 0;
-  //background-size: 320px 395px;
+  background-position: center -35px;
   box-sizing: border-box;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dpi) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
 }
 
 @media (min-width: $tablet-width) {
-  /*.header {
-    background-image: url("../img/bg-back-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: center 240px;
-    background-size: 660px 853px;
-    background-clip: content-box;
-  }*/
+  .header {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: center 0;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dpi) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
   .header {
-    background-image: url("../img/bg-back-mobile@1x.jpg");
-    background-repeat: no-repeat;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
     background-position: center 0;
-    //background-size: 1200px 853px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dpi) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
   }
 }

@@ -4,7 +4,7 @@
 
 .photo-description__title {
   margin: 0;
-  padding-top: 45px;
+  padding-top: 10px;
   padding-bottom: 49px;
   font-size: 14px;
   line-height: 30px;
@@ -12,7 +12,7 @@
   color: $main-text-color;
 }
 
-.photo-description__break {
+.photo-description__box {
   display: block;
 }
 
@@ -25,7 +25,7 @@
     font-size: 18px;
   }
 
-  .photo-description__break {
+  .photo-description__box {
     display: inline;
   }
 }

@@ -9,7 +9,6 @@
   top: 18px;
   right: 20px;
   z-index: 2;
-
   display: block;
   width: 50px;
   height: 24px;
@@ -24,7 +23,6 @@
 }
 
 .top-menu__item {
-  //min-height: 69px;
   vertical-align: middle;
   list-style-type: none;
   background-color: #283645;
@@ -42,17 +40,14 @@
 }
 
 .top-menu__svg-wrapper {
-  padding: 22px 20px;
+  padding: 23px 20px;
   font-size: 0;
-  background-color: #283645;
+  background-color: rgba(40, 54, 69, 0.5);
 }
 
-.top-menu__svg path {
-  fill: #ffffff;
-}
-
-.top-menu__svg-glasses {
-  display: none;
+.top-menu__img {
+  width: 75px;
+  height: 23px;
 }
 
 .top-menu__link {
@@ -63,7 +58,6 @@
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-  //background-color: $main-text-color;
   color: #ffffff;
 }
 
@@ -96,6 +90,11 @@
     background-color: rgba(210, 40, 86, 0.3);
     box-shadow: 0 8px 0 0 rgba(210, 40, 86, 0.3), 0 16px 0 0 rgba(210, 40, 86, 0.3);
   }
+
+  .top-menu--opened .top-menu__svg-wrapper {
+    background-color: #283645;
+  }
+
 
   .top-menu--opened .top-menu-button {
     &::before,
@@ -142,12 +141,9 @@
     padding-bottom: 41px;
   }
 
-  .top-menu__svg-glasses {
-    display: inline-block;
-  }
-
-  .top-menu__svg-pink {
-    display: none;
+  .top-menu__img {
+    width: 147px;
+    height: 40px;
   }
 
   .top-menu-button {
