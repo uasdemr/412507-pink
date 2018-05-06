@@ -66,8 +66,9 @@
     padding-bottom: 110px;
     display: flex;
     flex-direction: row;
-    background-position: 90% 100%;
-    background-size: 360px 425px;
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    background-position: -20px 100%;
+    //background-size: 360px 425px;
     background-color: transparent;
   }
 
@@ -118,7 +119,8 @@
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 120px;
-    background-position: 85% 100%;
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-position: 34px 100%;
   }
 
   .applets__title {
