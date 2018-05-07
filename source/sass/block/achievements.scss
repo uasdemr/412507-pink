@@ -79,9 +79,6 @@ input[type="checkbox"]:checked + .achievements__indicator {
   }
 }
 
-input[type="checkbox"]:checked + .achievements__indicator {
-}
-
 input[type="checkbox"]:checked + .achievements__indicator::before {
   content: "";
   position: absolute;

@@ -14,47 +14,47 @@
 }
 
 .link__send {
-    display: block;
-    margin: 0 auto;
-    padding-left: 88px;
-    padding-right: 88px;
-    outline: none;
-    color: $link-text-color;
-    border-color: $link-text-color;
-    background-color: #f2f2f2;
+  display: block;
+  margin: 0 auto;
+  padding-left: 88px;
+  padding-right: 88px;
+  outline: none;
+  color: $link-text-color;
+  border-color: $link-text-color;
+  background-color: #f2f2f2;
 
-    &:hover {
-      color: #ffffff;
-      background-color: #d22856;
-    }
-
-    &:active {
-      color: rgba(255, 255, 255, 0.3);
-    }
+  &:hover {
+    color: #ffffff;
+    background-color: #d22856;
   }
 
-  .link__cancel {
-    display: block;
-    margin: 0 auto;
-    margin-top: 12px;
-    padding-left: 88px;
-    padding-right: 88px;
-    outline: none;
-    background-color: #f2f2f2;
-    color: rgba(40, 54, 69, 0.1);
-    border-color: rgba(40, 54, 69, 0.1);
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
 
-    &:hover {
+.link__cancel {
+  display: block;
+  margin: 0 auto;
+  margin-top: 12px;
+  padding-left: 88px;
+  padding-right: 88px;
+  outline: none;
+  background-color: #f2f2f2;
+  color: rgba(40, 54, 69, 0.1);
+  border-color: rgba(40, 54, 69, 0.1);
+
+  &:hover {
     color: rgba(40, 54, 69, 0.3);
     border-color: rgba(40, 54, 69, 0.3);
-    }
-
-    &:active {
-      color: rgba(255, 255, 255, 0.3);
-      background-color: rgba(181, 185, 190, 1);
-      border-color: rgba(181, 185, 190, 1);
-    }
   }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(181, 185, 190, 1);
+    border-color: rgba(181, 185, 190, 1);
+  }
+}
 
 
 @media (min-width: $tablet-width) {
