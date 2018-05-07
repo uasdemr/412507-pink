@@ -28,6 +28,22 @@
   display: inline-block;
 }
 
+.footer__link-logo:hover .footer__svg-pink path {
+  fill: #d22856;
+}
+
+.footer__link-logo:active .footer__svg-pink path {
+  fill: #283645;
+}
+
+.footer__link-logo:active svg {
+  opacity: 0.3;
+}
+
+.footer__svg-desk {
+  display: none;
+}
+
 .footer__socials {
   min-height: 51px;
   padding-top: 27px;
@@ -144,5 +160,13 @@
 
   .footer__copyright-text {
     font-size: 18px;
+  }
+
+  .footer__svg-mob {
+    display: none;
+  }
+
+  .footer__svg-desk {
+    display: block;
   }
 }

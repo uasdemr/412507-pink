@@ -45,10 +45,32 @@
   background-color: rgba(40, 54, 69, 0.5);
 }
 
-.top-menu__img {
+.top-menu__logo-link {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 0;
+}
+
+.top-menu__logo-link:hover svg path {
+  fill: #d22856;
+}
+
+.top-menu__logo-link:active svg path {
+  fill: rgba(255, 255, 255, 0.3);
+}
+
+.top-menu__svg-tab {
+  display: none;
+}
+
+.top-menu__svg-desk {
+  display: none;
+}
+
+/*.top-menu__img {
   width: 75px;
   height: 23px;
-}
+}*/
 
 .top-menu__link {
   display: block;
@@ -149,10 +171,18 @@
     padding-bottom: 41px;
   }
 
-  .top-menu__img {
+  .top-menu__svg-mob {
+    display: none;
+  }
+
+  .top-menu__svg-tab {
+    display: block;
+  }
+
+  /*.top-menu__img {
     width: 147px;
     height: 40px;
-  }
+  }*/
 
   .top-menu-button {
     top: 45px;
@@ -225,5 +255,13 @@
     &:active {
       color: rgba(255, 255, 255, 0.3);
     }
+  }
+
+  .top-menu__svg-tab {
+    display: none;
+  }
+
+  .top-menu__svg-desk {
+    display: block;
   }
 }
