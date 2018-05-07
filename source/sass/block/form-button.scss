@@ -16,6 +16,14 @@
   border: none;
   border-radius: 3px;
   box-sizing: border-box;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {
