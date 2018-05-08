@@ -27,7 +27,6 @@
 
 .table__title {
   min-width: 280px;
-  //height: 95px;
   padding-top: 18px;
   padding-bottom: 20px;
   line-height: 30px;
@@ -80,10 +79,11 @@
 }
 
 .table__icon {
-  display: inline-block;
-  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 31px;
   height: 30px;
-  //background-color: magenta;
 
   &--yes {
     background-image: url("../img/icon-yes.svg");
@@ -152,6 +152,10 @@
   .table__column:first-child {
     padding-left: 15px;
     text-align: left;
+  }
+
+  .table__icon {
+    margin: 0 auto;
   }
 
   .table__text {

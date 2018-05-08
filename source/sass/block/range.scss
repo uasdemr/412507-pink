@@ -2,7 +2,7 @@
   width: 284px;
   position: absolute;
   left: -41px;
-  bottom: -28px;
+  bottom: -32px;
 
   &--show {
     display: none;
@@ -37,6 +37,10 @@
 
 .range-controls .toggle-control {
   left: 215px;
+
+  &:active {
+    background-color: #d22856;
+  }
 }
 
 @media (min-width: $tablet-width) {

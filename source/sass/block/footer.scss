@@ -28,11 +28,11 @@
   display: inline-block;
 }
 
-.footer__link-logo:hover .footer__svg-pink path {
+.footer__link-logo:hover path {
   fill: #d22856;
 }
 
-.footer__link-logo:active .footer__svg-pink path {
+.footer__link-logo:active path {
   fill: #283645;
 }
 
@@ -69,6 +69,19 @@
   display: inline-block;
   border: 3px solid #e9ebec;
   border-radius: 50%;
+
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:active {
+    border-color: #e9ebec;
+    opacity: 0.3;
+  }
+}
+
+.footer__svg {
+  fill: #d22856;
 }
 
 .footer__svg-wrapper {
@@ -101,6 +114,16 @@
 
 .footer__svg-academy {
   font-size: 0;
+}
+
+.footer__academy-icon {
+  &:hover {
+    fill: #283645;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

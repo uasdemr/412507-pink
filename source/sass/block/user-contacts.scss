@@ -39,6 +39,10 @@
   text-transform: uppercase;
 }
 
+.user-contacts__svg-wrapper {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .user-contacts__wrapper {
     position: relative;
@@ -81,13 +85,20 @@
     margin-top: 8px;
   }
 
-  .user-contacts__svg {
+  .user-contacts__svg-wrapper {
     position: absolute;
-    right: 0;
+    right: 2px;
     bottom: 40px;
-    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 58px;
     height: 60px;
     background-color: #e5e5e5;
+  }
+
+  .user-contacts__svg-icon {
+    fill: #d22856;
   }
 }
 

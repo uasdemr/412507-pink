@@ -63,8 +63,15 @@
     padding-right: 45px;
   }
 
+  .link__send {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+
   .link__cancel {
     margin-top: 27px;
+    padding-left: 75px;
+    padding-right: 75px;
   }
 }
 
@@ -74,5 +81,10 @@
     padding-right: 39px;
     font-size: 18px;
     line-height: 18px;
+    margin: 0;
+  }
+
+  .link__cancel {
+    margin-top: 0;
   }
 }
