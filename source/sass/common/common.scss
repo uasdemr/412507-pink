@@ -20,6 +20,15 @@ input[type="email"] {
   color: #283645;
   border: 2px solid #e5e5e5;
   box-sizing: border-box;
+  outline: none;
+
+  &:hover {
+    border-color: #000000;
+  }
+
+  &:focus {
+    border-color: #d22856;
+  }
 }
 
 .visually-hidden {
