@@ -84,20 +84,14 @@
   align-items: center;
   width: 31px;
   height: 30px;
+}
 
-  &--yes {
-    background-image: url("../img/icon-yes.svg");
-    background-repeat: no-repeat;
-    background-size: 30px 30px;
-    background-position: center 3px;
-  }
+.table__yes {
+  fill: #3dc644;
+}
 
-  &--no {
-    background-image: url("../img/icon-no.svg");
-    background-repeat: no-repeat;
-    background-size: 30px 30px;
-    background-position: center 0;
-  }
+.table__no {
+  fill: #f25b26;
 }
 
 .cost__toggles {
