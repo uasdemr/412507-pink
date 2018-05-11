@@ -1,5 +1,21 @@
+.map {
+  position: relative;
+}
+
 .map-wrapper {
   font-size: 0;
+}
+
+.map-wrapper:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  min-height: 33%;
+  background-image: url("../img/bg-triangle-white-footer.svg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center 0;
 }
 
 .map__frame {
