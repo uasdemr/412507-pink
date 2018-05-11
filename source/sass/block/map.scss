@@ -6,7 +6,7 @@
   font-size: 0;
 }
 
-.map-wrapper:before {
+.map-wrapper::before {
   content: "";
   position: absolute;
   display: block;
