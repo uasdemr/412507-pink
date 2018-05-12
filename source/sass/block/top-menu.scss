@@ -151,6 +151,10 @@
     }
   }
 
+  .top-menu--nojs .top-menu__svg-wrapper {
+    background-color: rgba(40, 54, 69, 1);
+  }
+
   .top-menu--nojs .top-menu-button {
     display: none;
   }
