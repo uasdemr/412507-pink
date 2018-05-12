@@ -25,7 +25,7 @@
   padding-top: 77px;
   padding-bottom: 288px;
   padding-left: 0;
-  background-image: url("/img/iphone-screen-mobile@1x.png");
+  background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: bottom -40px center;
   list-style-type: none;
@@ -96,10 +96,6 @@
     box-sizing: border-box;
   }
 
-  .information__item {
-    //width: 293px;
-  }
-
   .information__img-wrapper {
     min-width: 320px;
     margin: 0 auto;
@@ -107,12 +103,6 @@
     padding-top: 0;
     font-size: 0;
     text-align: center;
-  }
-
-  .information__img-first {
-    //background-image: url("../img/iphone-screen-1-desktop@1x.png");
-    //background-size: 292px auto;
-    //background-position: center 31px;
   }
 
   .information__title {

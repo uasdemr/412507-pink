@@ -36,6 +36,30 @@
   align-items: center;
 }
 
+.achievements__shark {
+  order: 1;
+}
+
+.achievements__beach {
+  order: 2;
+}
+
+.achievements__chack {
+  order: 3;
+}
+
+.achievements__gift {
+  order: 4;
+}
+
+.achievements__tower {
+  order: 5;
+}
+
+.achievements__hotel {
+  order: 6;
+}
+
 .achievements__text {
   margin-left: 30px;
   font-size: 18px;
@@ -145,6 +169,7 @@ input[type="checkbox"]:checked + .achievements__indicator::before {
     min-height: 163px;
     padding-top: 54px;
     padding-left: 57px;
+    padding-right: 10px;
     padding-bottom: 13px;
     flex-direction: row;
     flex-wrap: wrap;
@@ -154,5 +179,29 @@ input[type="checkbox"]:checked + .achievements__indicator::before {
   .achievements__label {
     height: 39px;
     min-width: 260px;
+  }
+
+  .achievements__shark {
+    order: 1;
+  }
+
+  .achievements__beach {
+    order: 4;
+  }
+
+  .achievements__chack {
+    order: 2;
+  }
+
+  .achievements__gift {
+    order: 5;
+  }
+
+  .achievements__tower {
+    order: 3;
+  }
+
+  .achievements__hotel {
+    order: 6;
   }
 }
