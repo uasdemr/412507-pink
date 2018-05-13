@@ -1,0 +1,140 @@
+.modals {
+  position: relative;
+}
+
+.modals__modal {
+  position: absolute;
+  left: calc(50% - 160px);
+  width: 320px;
+  padding-top: 40px;
+  padding-bottom: 0;
+  background-color: #ffffff;
+  box-shadow: 0 5px 15px 0 rgba(0%, 0%, 0%, 0.15);
+  box-sizing: border-box;
+  display: none;
+}
+
+.modals__wrong {
+  bottom: 1290px;
+
+  &--show {
+    display: block;
+  }
+}
+
+.modals__alright {
+  bottom: 740px;
+
+  &--show {
+    display: block;
+  }
+}
+
+.modals__title {
+  margin: 0;
+  padding: 0 20px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #283645;
+  text-align: center;
+}
+
+.modals__text {
+  margin: 0;
+  margin-top: 32px;
+  padding: 0 20px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+  text-align: center;
+}
+
+.modals__button-wrapper {
+  padding: 50px 20px 50px 20px;
+}
+
+.modals__button-alright {
+  margin-top: 35px;
+  background-color: #f2f2f2;
+}
+
+.modals__button {
+  width: 100%;
+  padding: 20px 0;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 3px;
+  border: none;
+  color: rgb(255, 255, 255);
+  background-color: #2aab6d;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .modals__modal {
+    width: 460px;
+    left: calc(50% - 220px);
+    border-radius: 3px;
+  }
+
+  .modals__wrong {
+    bottom: 1720px;
+  }
+
+  .modals__alright {
+    bottom: 1180px;
+  }
+
+  .modals__title {
+    padding: 0 100px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .modals__text {
+    padding: 0 77px;
+    font-size: 18px;
+  }
+
+  .modals__button-wrapper {
+    padding: 50px 80px 50px 80px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .modals__modal {
+    width: 780px;
+    left: calc(50% - 390px);
+    border-radius: 3px;
+  }
+
+  .modals__wrong {
+    bottom: 920px;
+  }
+
+  .modals__alright {
+    bottom: 398px;
+  }
+
+  .modals__title {
+    padding: 0 100px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .modals__text {
+    padding: 0 200px;
+    font-size: 18px;
+  }
+
+  .modals__button-wrapper {
+    padding: 50px 240px 50px 240px;
+  }
+}

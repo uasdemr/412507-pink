@@ -76,6 +76,7 @@
   text-decoration: none;
   text-align: center;
   color: #ffffff;
+  cursor: pointer;
 
   &:hover {
     color: $link-text-color;
@@ -149,6 +150,10 @@
     &:active::after {
       background-color: rgba(210, 40, 86, 0.3);
     }
+  }
+
+  .top-menu--nojs .top-menu__svg-wrapper {
+    background-color: rgba(40, 54, 69, 1);
   }
 
   .top-menu--nojs .top-menu-button {

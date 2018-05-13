@@ -25,6 +25,31 @@
   border-bottom: none;
 }
 
+.table__hit {
+  position: relative;
+}
+
+.table__hit::before {
+  position: absolute;
+  width: 74px;
+  height: 73px;
+  left: 0;
+  top: 0;
+  content: "";
+  background-image: url("../img/bg-hit.svg");
+}
+
+.table__hit::after {
+  position: absolute;
+  left: 11px;
+  top: 12px;
+  transform: rotate(-45deg);
+  content: "ХИТ";
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: normal;
+}
+
 .table__title {
   min-width: 280px;
   padding-top: 18px;
@@ -121,6 +146,7 @@
     padding-bottom: 12px;
     min-width: 155px;
     box-sizing: border-box;
+    overflow: hidden;
   }
 
   .table__title-text {
@@ -131,6 +157,17 @@
   .table__title-costs {
     font-size: 18px;
     line-height: 25px;
+  }
+
+  .table__hit::before {
+    position: absolute;
+    left: -7px;
+    top: -7px;
+  }
+
+  .table__hit::after {
+    left: 6px;
+    top: 6px;
   }
 
   .table__column {
