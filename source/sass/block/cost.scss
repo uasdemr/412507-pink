@@ -29,17 +29,17 @@
   position: relative;
 }
 
-.table__hit:before {
-    position: absolute;
-    width: 74px;
-    height: 73px;
-    left: 0;
-    top: 0;
-    content: "";
-    background-image: url("../img/bg-hit.svg");
+.table__hit::before {
+  position: absolute;
+  width: 74px;
+  height: 73px;
+  left: 0;
+  top: 0;
+  content: "";
+  background-image: url("../img/bg-hit.svg");
 }
 
-.table__hit:after {
+.table__hit::after {
   position: absolute;
   left: 11px;
   top: 12px;
@@ -159,13 +159,13 @@
     line-height: 25px;
   }
 
-  .table__hit:before {
+  .table__hit::before {
     position: absolute;
     left: -7px;
     top: -7px;
-}
+  }
 
-  .table__hit:after {
+  .table__hit::after {
     left: 6px;
     top: 6px;
   }
