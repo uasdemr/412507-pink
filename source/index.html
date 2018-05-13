@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preload" href="/css/style.min.css" as="style">
     <link rel="preload" href="/fonts/opensans.woff2" as="font">
     <link rel="preload" href="/fonts/opensansbold.woff2" as="font">
@@ -20,7 +21,7 @@
     </svg>
     <header class="header">
       <nav class="top-menu top-menu--closed top-menu--nojs">
-        <button class="top-menu__toggle top-menu-button" type="button"></button>
+        <button class="top-menu__toggle top-menu-button" type="button" aria-label="Меню"></button>
         <div class="top-menu__wrapper">
           <div class="top-menu__svg-wrapper">
             <a class="top-menu__logo-link">
@@ -238,9 +239,9 @@
               </button>
             </div>
             <p class="reviews__toggles slider__toggles">
-              <button class="slider__toggle slider-button slider-button--active" type="button"></button>
-              <button class="slider__toggle slider-button" type="button"></button>
-              <button class="slider__toggle slider-button" type="button"></button>
+              <button class="slider__toggle slider-button slider-button--active" type="button" aria-label="Первый слайд"></button>
+              <button class="slider__toggle slider-button" type="button" aria-label="Второй слайд"></button>
+              <button class="slider__toggle slider-button" type="button" aria-label="Третий слайд"></button>
             </p>
           </div>
         </div>
@@ -416,7 +417,7 @@
       </section>
       <section class="map">
         <div class="map-wrapper">
-          <iframe class="map__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424177667!2d30.32088925178036!3d59.938796868958846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1524837493238" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <iframe class="map__frame" title="Карта проезда" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424177667!2d30.32088925178036!3d59.938796868958846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1524837493238" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
       </section>
     </main>
@@ -425,7 +426,7 @@
         <div class="footer__wrapper">
           <div class="footer__logo-wrapper">
             <div class="footer__img-wrapper">
-              <a class="footer__link-logo" href="https://htmlacademy.ru/intensive/adaptive">
+              <a class="footer__link-logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на интенсив Академии">
                 <svg class="footer__svg-mob" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375">
   <g class="footer__svg-pink">
     <path fill="#283645" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z"/>
@@ -470,7 +471,7 @@
           <div class="footer__socials">
             <ul class="footer__socials-list">
               <li class="footer__socials-item">
-                <a class="footer__social-link" href="https://twitter.com">
+                <a class="footer__social-link" href="https://twitter.com" aria-label="Ссылка на сайт Twitter">
                   <div class="footer__svg-wrapper">
                     <svg class="footer__svg" width="17.5px" height="14.663px">
                       <use xlink:href="#icon-twitter"></use>
@@ -479,7 +480,7 @@
                 </a>
               </li>
               <li class="footer__socials-item">
-                <a class="footer__social-link" href="https://www.facebook.com">
+                <a class="footer__social-link" href="https://www.facebook.com" aria-label="Ссылка на сайт Facebook">
                   <div class="footer__svg-wrapper">
                     <svg class="footer__svg" width="8.673px" height="18.944px">
                       <use xlink:href="#icon-facebook"></use>
@@ -488,7 +489,7 @@
                 </a>
               </li>
               <li class="footer__socials-item">
-                <a class="footer__social-link" href="https://www.youtube.com">
+                <a class="footer__social-link" href="https://www.youtube.com" aria-label="Ссылка на сайт Youtube">
                   <div class="footer__svg-wrapper">
                     <svg class="footer__svg" width="14.64px" height="13.96px">
                       <use xlink:href="#icon-youtube"></use>
@@ -500,7 +501,7 @@
           </div>
           <div class="footer__copyright">
             <span class="footer__copyright-text">Разработано:</span>
-            <a class="footer__copyright-link footer__button" href="https://htmlacademy.ru/intensive/adaptive">
+            <a class="footer__copyright-link footer__button" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на интенсив Академии">
               <div class="footer__svg-academy">
                 <svg class="footer__svg footer__academy-icon" width="26.943px" height="34.09px">
                   <use xlink:href="#academy-inc"></use>

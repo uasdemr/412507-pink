@@ -12,16 +12,9 @@ var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
-var htmlmin = require('gulp-htmlmin');
 var server = require("browser-sync").create();
 var run = require("run-sequence");
 var del = require("del");
-
-// gulp.task("htmlmin", function() {
-//   return gulp.src("source/*.html")
-//     .pipe(htmlmin({collapseWhitespace: true}))
-//     .pipe(gulp.dest("build"));
-// });
 
 gulp.task("clean", function () {
   return del("build");
