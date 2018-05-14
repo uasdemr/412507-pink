@@ -1,8 +1,8 @@
 .applets__wrapper {
-  padding-top: 392px;
+  padding-top: 396px;
   background-image: url("../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: 0 106px;
+  background-position: 0 110px;
   box-sizing: border-box;
 }
 
@@ -62,18 +62,18 @@
 
 .applets__text {
   margin: 0;
-  padding-top: 5px;
+  padding-top: 3px;
   font-size: 14px;
   line-height: 24px;
+  letter-spacing: -0.3px;
   text-align: center;
   color: #ffffff;
-  //background-color: $main-text-color;
 }
 
 @media (min-width: $tablet-width) {
   .applets__wrapper {
     margin: 0 auto;
-    padding-top: 90px;
+    padding-top: 94px;
     padding-bottom: 110px;
     display: flex;
     flex-direction: row;
@@ -94,6 +94,10 @@
     background-color: transparent;
   }
 
+  .applets__link-wrapper {
+    margin-bottom: 15px;
+  }
+
   .applets__list,
   .applets__text {
     padding: 0;
@@ -101,13 +105,22 @@
 
   .applets__list {
     margin: 0;
-    justify-content: space-evenly;
+    padding-left: 30px;
+    padding-right: 30px;
+    justify-content: space-around;
   }
+
+  .applets__item {
+    min-height: 57px;
+    align-items: center;
+  }
+
 
   .applets__title {
     width: 250px;
     margin: 0 auto;
-    line-height: 47px;
+    line-height: 48px;
+    letter-spacing: -0.5px;
 
     &--hidden {
       display: block;
@@ -118,7 +131,7 @@
     font-size: 18px;
     font-weight: lighter;
     line-height: 24px;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.4px;
   }
 }
 
@@ -127,11 +140,10 @@
     width: 960px;
     margin: 0 auto;
     padding-top: 109px;
-    padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 120px;
     background-image: url("../img/iphone-hand-desktop@1x.png");
-    background-position: 34px 100%;
+    background-position: 25px 100%;
   }
 
   .applets__title {
@@ -145,7 +157,12 @@
   .applets__content {
     width: 320px;
     min-height: 515px;
-    margin-right: auto;
     padding: 0;
+  }
+
+  .applets__list {
+    padding-left: 55px;
+    padding-right: 59px;
+    justify-content: space-between;
   }
 }

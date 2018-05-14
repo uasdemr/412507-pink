@@ -9,6 +9,7 @@
 .map-wrapper::before {
   content: "";
   position: absolute;
+  top: -1px;
   display: block;
   width: 100%;
   min-height: 33%;
@@ -30,6 +31,6 @@
 
 @media (min-width: $desktop-width) {
   .map__frame {
-    height: 494px;
+    height: 500px;
   }
 }

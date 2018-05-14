@@ -79,7 +79,7 @@
 
 @media (min-width: $desktop-width) {
   .information {
-    margin-top: 65px;
+    margin-top: 68px;
   }
 
   .information__list {
@@ -88,8 +88,8 @@
     justify-content: space-between;
     margin: 0 auto;
     padding-top: 0;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 5px;
+    padding-right: 5px;
     padding-bottom: 30px;
     list-style-type: none;
     background-image: none;
@@ -97,7 +97,7 @@
   }
 
   .information__img-wrapper {
-    min-width: 320px;
+    min-width: 292px;
     margin: 0 auto;
     display: block;
     padding-top: 0;
@@ -109,7 +109,7 @@
     width: 230px;
     margin: 0 auto;
     padding-top: 55px;
-    font-size: 30px;
+    font-size: 31px;
     line-height: 30px;
     text-align: center;
   }

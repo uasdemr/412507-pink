@@ -33,7 +33,7 @@
 
 .panorama__time {
   text-transform: uppercase;
-  letter-spacing: -1.5px;
+  letter-spacing: -0.3px;
   font-size: 12px;
   font-weight: lighter;
 }
@@ -72,16 +72,15 @@
 
 @media (min-width: $tablet-width) {
   .panorama {
-    padding-bottom: 30px;
+    width: 100%;
+    padding-bottom: 49px;
   }
 
   .panorama__img-wrapper {
     min-width: 660px;
-    min-height: 510px;
   }
 
   .panorama__img {
-    width: 100%;
     min-height: 510px;
   }
 
@@ -125,6 +124,6 @@
   }
 
   .panorama__content {
-    padding-top: 20px;
+    padding: 23px 24px 25px 36px;
   }
 }

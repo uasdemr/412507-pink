@@ -41,8 +41,8 @@
 
 .table__hit::after {
   position: absolute;
-  left: 11px;
-  top: 12px;
+  left: 9px;
+  top: 13px;
   transform: rotate(-45deg);
   content: "ХИТ";
   font-size: 14px;
@@ -121,8 +121,9 @@
 
 .cost__toggles {
   margin: 0;
-  padding-top: 30px;
-  padding-bottom: 45px;
+  padding-top: 44px;
+  padding-bottom: 49px;
+  font-size: 0;
   text-align: center;
 }
 
@@ -132,7 +133,7 @@
     margin: 0 auto;
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 85px;
+    padding-top: 87px;
     padding-bottom: 68px;
     box-sizing: border-box;
   }
@@ -161,18 +162,19 @@
 
   .table__hit::before {
     position: absolute;
-    left: -7px;
+    left: -6px;
     top: -7px;
   }
 
   .table__hit::after {
     left: 6px;
-    top: 6px;
+    top: 4px;
   }
 
   .table__column {
     height: 45px;
     padding: 0;
+    line-height: 14px;
     text-transform: none;
 
     &--show {
@@ -200,11 +202,11 @@
 
 @media (min-width: $desktop-width) {
   .cost__wrapper {
-    padding-top: 163px;
+    padding-top: 153px;
     padding-bottom: 95px;
     width: 960px;
-    padding-left: 18px;
-    padding-right: 10px;
+    padding-left: 9px;
+    padding-right: 0;
     margin: 0 auto;
     box-sizing: border-box;
   }
@@ -215,8 +217,8 @@
 
   .table__title {
     min-width: 235px;
-    padding-top: 18px;
-    padding-bottom: 22px;
+    padding-top: 16px;
+    padding-bottom: 18px;
   }
 
   .table__title-text {
@@ -225,7 +227,7 @@
 
   .table__title-costs {
     font-size: 24px;
-    line-height: 29px;
+    line-height: 34px;
   }
 
   .table__column {
