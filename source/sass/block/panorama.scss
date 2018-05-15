@@ -8,8 +8,29 @@
 }
 
 .panorama__img-wrapper {
+  position: relative;
   min-width: 320px;
   min-height: 137px;
+}
+
+.panorama__img-wrapper::after {
+  position: absolute;
+  right: 40px;
+  top: 7px;
+  content: "ПАНОРАМА ДНЯ";
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.panorama__img-wrapper::before {
+  position: absolute;
+  content: "";
+  width: 140px;
+  height: 36px;
+  right: 20px;
+  background-color: #d22856;
 }
 
 .panorama__img {
@@ -82,6 +103,14 @@
     min-width: 660px;
   }
 
+  .panorama__img-wrapper::before {
+    top: 58px;
+  }
+
+  .panorama__img-wrapper::after {
+    top: 64px;
+  }
+
   .panorama__img {
     min-height: 510px;
   }
@@ -119,6 +148,16 @@
 @media (min-width: $desktop-width) {
   .panorama {
     padding-bottom: 0;
+  }
+
+  .panorama__img-wrapper::before {
+    top: 54px;
+    right: 131px;
+  }
+
+  .panorama__img-wrapper::after {
+    top: 60px;
+    right: 150px;
   }
 
   .panorama__img {

@@ -1,5 +1,4 @@
 .form__button-wrapper {
-  //padding-top: 4px;
   background-color: #ffffff;
 }
 
@@ -23,6 +22,15 @@
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.form-button:disabled {
+  cursor: not-allowed;
+  background-color: rgba(229, 229, 229, 1);
+
+  &:active {
+    color: rgba(255, 255, 255, 1);
   }
 }
 

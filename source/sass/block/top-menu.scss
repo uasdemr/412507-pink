@@ -30,11 +30,6 @@
   box-shadow: inset 0 1px 1px 0 rgba(72, 84, 97, 1);
 }
 
-
-.top-menu__item:hover {
-  box-shadow: none;
-}
-
 .top-menu__item:active {
   box-shadow: inset 0 2px 4px 0 rgba(72, 84, 97, 1);
 }
@@ -233,8 +228,17 @@
     text-transform: none;
     background-color: transparent;
 
-    &:active {
-      color: rgba(255, 255, 255, 0.3);
+    &--active {
+      &::after {
+        position: absolute;
+        top: 45px;
+        left: 0;
+        right: 0;
+        content: "";
+        width: 100%;
+        height: 2px;
+        background-color: #ffffff;
+      }
     }
   }
 
@@ -251,6 +255,10 @@
       height: 2px;
       background-color: #ffffff;
     }
+  }
+
+  .top-menu__link:active {
+    color: #04d38d;
   }
 
   .top-menu__svg-tab {

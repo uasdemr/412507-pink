@@ -115,6 +115,18 @@ input[type="checkbox"]:checked + .achievements__indicator::before {
   transform: rotate(45deg);
 }
 
+input[type="checkbox"]:disabled + .achievements__indicator {
+  border-color: rgba(229, 229, 229, 1);
+}
+
+input[type="checkbox"]:checked:disabled + .achievements__indicator {
+  border-color: rgba(229, 229, 229, 1);
+}
+
+input[type="checkbox"]:checked:disabled + .achievements__indicator::before {
+  border-color: rgba(229, 229, 229, 1);
+}
+
 @media (min-width: $tablet-width) {
   .achievements {
     background-color: #ffffff;

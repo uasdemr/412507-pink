@@ -44,23 +44,14 @@
   text-align: center;
 }
 
-.contacts__box-address {
-  display: inline-block;
-  padding-top: 2px;
-  font-size: 0;
-  line-height: 30px;
-}
-
 .contacts__box-item {
-  flex: 24px;
   font-size: 24px;
   text-decoration: none;
   color: #d22856;
-}
 
-.contacts__box-email {
   &:hover {
     color: $main-text-color;
+    cursor: pointer;
   }
 
   &:active {
@@ -104,15 +95,12 @@
   }
 
   .contacts__box-item {
-    font-size: 24px;
-    line-height: 27px;
-    font-weight: lighter;
-  }
-
-  .contacts__box-address {
     display: inline-block;
     width: 250px;
     padding-top: 0;
+    font-size: 24px;
+    line-height: 27px;
+    font-weight: lighter;
   }
 }
 
@@ -151,6 +139,6 @@
   }
 
   .contacts__box {
-    padding-top: 25px;
+    padding-top: 23px;
   }
 }

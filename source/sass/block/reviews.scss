@@ -119,6 +119,19 @@
     display: flex;
     border: none;
     background: transparent;
+    outline: none;
+  }
+
+  .reviews__arrow-left {
+    fill: #bec2c7;
+
+    &:hover {
+      fill: #7e868f;
+    }
+
+    &:active {
+      fill: #e9ebec;
+    }
   }
 
   .reviews__name {
