@@ -3,17 +3,20 @@
 }
 
 .add-photos__description-wrapper {
-  padding-top: 43px;
-  padding-bottom: 42px;
+  padding-top: 40px;
+  padding-bottom: 43px;
   background-color: #ffffff;
 }
 
 .add-photos__description {
   margin: 0;
+  padding-right: 5px;
+  padding-top: 1px;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
   color: $main-text-color;
+  box-sizing: border-box;
 }
 
 .add-photos__img-wrapper {
@@ -83,7 +86,7 @@
 @media (min-width: $tablet-width) {
   .add-photos__description-wrapper {
     padding-top: 45px;
-    padding-bottom: 69px;
+    padding-bottom: 67px;
   }
 
   .add-photos__description {
@@ -92,7 +95,7 @@
 
   .add-photos__container {
     padding-top: 57px;
-    padding-bottom: 11px;
+    padding-bottom: 14px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -143,7 +146,7 @@
   .add-photos__buttons {
     padding-left: 27px;
     padding-right: 13px;
-    padding-top: 17px;
+    padding-top: 18px;
     border: none;
   }
 
@@ -165,30 +168,34 @@
 @media (min-width: $desktop-width) {
   .add-photos {
     background-color: #ffffff;
-    padding-bottom: 28px;
+    padding-bottom: 63px;
   }
 
   .add-photos__container {
     justify-content: flex-start;
     background-color: #f2f2f2;
-    padding-bottom: 15px;
+    padding-bottom: 17px;
+    padding-top: 53px;
   }
 
   .add-photos__img-wrapper {
-    padding-left: 88px;
+    padding-left: 80px;
+    padding-top: 3px;
   }
 
   .add-photos__description-wrapper {
-    padding-top: 23px;
+    padding-top: 16px;
     padding-bottom: 66px;
   }
 
   .add-photos__description {
-    margin-left: 17px;
+    margin-left: 0;
+    padding-right: 0;
   }
 
   .add-photos__form-wrapper {
     margin-left: 63px;
+    padding-bottom: 40px;
   }
 
   .add-photos__list {
@@ -199,18 +206,19 @@
     padding-top: 0;
     padding-bottom: 11px;
     padding-right: 10px;
+    margin-top: 13px;
   }
 
   .add-photos__icon-wrapper {
-    width: 44px;
-    height: 44px;
+    width: 50px;
+    height: 47px;
     margin-left: 0;
   }
 
   .add-photos__buttons {
     padding-left: 28px;
     padding-right: 0;
-    padding-top: 97px;
+    padding-top: 95px;
     display: flex;
     justify-content: space-between;
   }
@@ -225,8 +233,8 @@
   }
 
   .add-photos__fill {
-    width: 48px;
-    height: 43px;
+    width: 50px;
+    height: 47px;
   }
 
   .add-photos__contrast {

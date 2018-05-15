@@ -64,7 +64,7 @@
   .user-contacts__label-wrapper {
     padding-top: 40px;
     padding-left: 58px;
-    padding-bottom: 28px;
+    padding-bottom: 26px;
     border: 2px solid #e5e5e5;
   }
 
@@ -82,17 +82,17 @@
 
   .user-contacts__text {
     padding-left: 20px;
-    margin-top: 8px;
+    margin-top: 9px;
   }
 
   .user-contacts__svg-wrapper {
     position: absolute;
     right: 2px;
-    bottom: 40px;
+    bottom: 41px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 58px;
+    width: 60px;
     height: 60px;
     background-color: #e5e5e5;
   }
@@ -105,12 +105,13 @@
 @media (min-width: $desktop-width) {
   .user-contacts__wrapper {
     width: 960px;
-    padding-left: 18px;
-    padding-right: 0;
+    padding-left: 9px;
+    padding-right: 11px;
   }
 
   .user-contacts__description {
-    left: 38%;
+    left: 37%;
+    top: -4px;
   }
 
   .user-contacts__label-wrapper {
@@ -119,11 +120,11 @@
     justify-content: space-between;
     padding-top: 38px;
     padding-bottom: 13px;
-    padding-right: 61px;
+    padding-right: 58px;
   }
 
   .user-contacts__label {
-    width: 373px;
+    width: 375px;
     margin: 0;
   }
 }

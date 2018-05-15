@@ -14,10 +14,9 @@
 }
 
 .link__send {
+  width: 100%;
   display: block;
   margin: 0 auto;
-  padding-left: 88px;
-  padding-right: 88px;
   outline: none;
   color: $link-text-color;
   border-color: $link-text-color;
@@ -64,14 +63,18 @@
   }
 
   .link__send {
-    padding-left: 75px;
-    padding-right: 75px;
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 5px;
   }
 
   .link__cancel {
-    margin-top: 27px;
-    padding-left: 75px;
-    padding-right: 75px;
+    width: 100%;
+    margin-top: 25px;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 5px;
   }
 }
 
@@ -84,7 +87,25 @@
     margin: 0;
   }
 
+  .link__send {
+    width: auto;
+    padding-left: 41px;
+    padding-right: 36px;
+    padding-top: 14px;
+    padding-bottom: 16px;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+  }
+
   .link__cancel {
-    margin-top: 0;
+    width: auto;
+    padding-left: 54px;
+    padding-right: 48px;
+    padding-top: 14px;
+    padding-bottom: 16px;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
   }
 }

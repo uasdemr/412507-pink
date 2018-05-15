@@ -5,7 +5,7 @@
 .area__wrapper {
   width: 320px;
   margin: 0 auto;
-  padding: 33px 20px 40px 20px;
+  padding: 31px 20px 48px 20px;
   box-sizing: border-box;
 }
 
@@ -21,11 +21,12 @@
 .form__textarea-wrapper {
   text-align: center;
   margin-top: 10px;
+  font-size: 0;
 }
 
 .area__area {
   width: 100%;
-  height: 200px;
+  height: 201px;
   padding: 15px 20px 20px 20px;
   font-size: 18px;
   line-height: 30px;
@@ -36,7 +37,6 @@
   .area__wrapper {
     width: 660px;
     padding-top: 25px;
-    //padding-bottom: 25px;
     position: relative;
   }
 
@@ -52,7 +52,7 @@
   .form__textarea-wrapper {
     margin: 0 auto;
     padding-top: 45px;
-    padding-bottom: 46px;
+    padding-bottom: 51px;
     border: 2px solid #e5e5e5;
   }
 
@@ -68,21 +68,23 @@
   .area__wrapper {
     width: 960px;
     padding-top: 25px;
-    padding-right: 0;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 
   .area__description {
-    left: 38%;
+    left: 37%;
     width: 250px;
   }
 
   .form__textarea-wrapper {
     padding-top: 42px;
-    padding-bottom: 40px;
+    padding-bottom: 44px;
   }
 
   .area__area {
     height: 127px;
     width: 820px;
+    padding-top: 14px;
   }
 }

@@ -36,17 +36,18 @@
   .personal__wrapper {
     width: 660px;
     padding-top: 46px;
+    padding-bottom: 40px;
   }
 
   .personal__label {
-    margin-top: 50px;
+    margin-top: 51px;
     display: flex;
     align-items: center;
   }
 
   .personal__acronym {
     padding-left: 0;
-    padding-right: 19px;
+    padding-right: 18px;
     padding-bottom: 0;
   }
 }
@@ -59,7 +60,11 @@
 
   .personal__wrapper {
     width: auto;
-    padding-left: 10px;
-    padding-right: 26px;
+    padding-left: 0;
+    padding-right: 36px;
+  }
+
+  .personal__label {
+    margin-top: 52px;
   }
 }

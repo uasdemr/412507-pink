@@ -1,4 +1,5 @@
 .panorama {
+  margin-bottom: 20px;
   font-size: 0;
 }
 
@@ -16,7 +17,7 @@
 }
 
 .panorama__content {
-  padding-top: 18px;
+  padding-top: 16px;
   padding-bottom: 20px;
   padding-left: 18px;
   padding-right: 18px;
@@ -27,7 +28,7 @@
 .panorama__name {
   margin: 0;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 25px;
   font-weight: lighter;
 }
 
@@ -74,6 +75,7 @@
   .panorama {
     width: 100%;
     padding-bottom: 49px;
+    margin-bottom: 0;
   }
 
   .panorama__img-wrapper {
@@ -124,6 +126,6 @@
   }
 
   .panorama__content {
-    padding: 23px 24px 25px 36px;
+    padding: 22px 32px 23px 28px;
   }
 }

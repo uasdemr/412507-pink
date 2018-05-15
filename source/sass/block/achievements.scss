@@ -158,16 +158,17 @@ input[type="checkbox"]:checked + .achievements__indicator::before {
 
   .achievements__wrapper {
     width: 960px;
-    padding-right: 0;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 
   .achievements__description {
-    left: 28.5%;
+    left: 27.5%;
   }
 
   .achievements__label-wrapper {
     min-height: 163px;
-    padding-top: 54px;
+    padding-top: 53px;
     padding-left: 57px;
     padding-right: 10px;
     padding-bottom: 13px;
@@ -191,10 +192,12 @@ input[type="checkbox"]:checked + .achievements__indicator::before {
 
   .achievements__chack {
     order: 2;
+    margin-left: 22px;
   }
 
   .achievements__gift {
     order: 5;
+    margin-left: 22px;
   }
 
   .achievements__tower {

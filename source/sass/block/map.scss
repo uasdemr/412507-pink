@@ -30,6 +30,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .map {
+    padding-bottom: 33px;
+  }
+
   .map__frame {
     height: 500px;
   }
