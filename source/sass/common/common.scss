@@ -3,6 +3,23 @@ body {
   background-color: #282828;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
+  position: relative;
+}
+
+.abs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 1200px;
+  height: 2056px;
+  background-image: url("../img/pink-form-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 0;
+  z-index: 9999;
+  opacity: 0.5;
+  background-color: red;
 }
 
 img {
@@ -14,9 +31,9 @@ input[type="text"],
 input[type="tel"],
 input[type="email"] {
   width: 100%;
-  padding: 15px 19px;
+  padding: 18px 20px;
   font-size: 18px;
-  line-height: 30px;
+  //line-height: 30px;
   color: #283645;
   border: 2px solid #e5e5e5;
   box-sizing: border-box;
@@ -43,5 +60,8 @@ input[type="email"] {
   input[type="tel"],
   input[type="email"] {
     padding-right: 60px;
+    margin-bottom: 9px;
+    background-color: transparent;
+    z-index: 1;
   }
 }

@@ -6,8 +6,8 @@
 .personal__wrapper {
   width: 320px;
   margin: 0 auto;
-  padding-top: 9px;
-  padding-bottom: 42px;
+  padding-top: 8px;
+  padding-bottom: 25px;
   padding-left: 20px;
   padding-right: 20px;
   box-sizing: border-box;
@@ -15,11 +15,7 @@
 
 .personal__label {
   display: block;
-  margin-top: 14px;
-}
-
-.personal__label:first-child {
-  margin-top: 0;
+  margin-bottom: 15px;
 }
 
 .personal__acronym {
@@ -36,18 +32,23 @@
   .personal__wrapper {
     width: 660px;
     padding-top: 46px;
-    padding-bottom: 40px;
+    padding-bottom: 0;
   }
 
   .personal__label {
-    margin-top: 51px;
+    margin-top: 0;
+    margin-bottom: 50px;
     display: flex;
     align-items: center;
   }
 
+  .personal__label:first-child {
+    //margin-top: 37px;
+  }
+
   .personal__acronym {
     padding-left: 0;
-    padding-right: 18px;
+    padding-right: 19px;
     padding-bottom: 0;
   }
 }
@@ -55,16 +56,18 @@
 @media (min-width: $desktop-width) {
   .personal {
     width: 470px;
-    margin-top: 13px;
   }
 
   .personal__wrapper {
+    display: block;
     width: auto;
+    padding-top: 59px;
+    padding-bottom: 0;
     padding-left: 0;
     padding-right: 36px;
   }
 
   .personal__label {
-    margin-top: 52px;
+    margin-bottom: 51px;
   }
 }

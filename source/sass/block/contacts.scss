@@ -52,10 +52,12 @@
   &:hover {
     color: $main-text-color;
     cursor: pointer;
+    text-decoration: underline;
   }
 
   &:active {
     color: rgba(40, 54, 69, 0.3);
+    text-decoration: none;
   }
 }
 
@@ -119,6 +121,7 @@
 
   .contacts__contact-wrapper {
     padding-top: 56px;
+    flex-wrap: nowrap;
   }
 
   .contacts__come {

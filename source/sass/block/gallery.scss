@@ -70,13 +70,16 @@ body {
   .gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
 
   .gallery__item {
     flex-basis: 300px;
     margin: 0;
     margin-bottom: 20px;
+  }
+
+  .gallery__item:nth-child(even) {
+    margin-left: 19px;
   }
 
   .gallery__img {
@@ -92,10 +95,15 @@ body {
     padding-bottom: 21px;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     box-sizing: border-box;
+    position: relative;
   }
 
   .gallery__like {
+    position: absolute;
+    bottom: 20px;
+    width: 80.5%;
     margin-top: auto;
     padding-left: 0;
     display: flex;
@@ -121,6 +129,15 @@ body {
   .gallery__item {
     margin-top: 50px;
     margin-bottom: 4px;
+    margin-left: 20px;
+  }
+
+  /*.gallery__item:first-child {
+    margin-left: 0;
+  }*/
+
+  .gallery__item:nth-child(3n+1) {
+    margin-left: 0;
   }
 
   .gallery__time {

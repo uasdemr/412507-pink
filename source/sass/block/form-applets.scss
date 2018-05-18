@@ -8,7 +8,7 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 38px;
-  padding-bottom: 40px;
+  padding-bottom: 6px;
   box-sizing: border-box;
 }
 
@@ -30,12 +30,13 @@
   margin-top: 35px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .form-applets__label {
   min-height: 39px;
   display: flex;
+  margin-bottom: 36px;
   align-items: center;
 }
 
@@ -97,21 +98,22 @@ input[type="radio"]:disabled + .form-applets__indicator {
 
 @media (min-width: $tablet-width) {
   .form-applets {
+    margin-top: 16px;
     background-color: #ffffff;
   }
 
   .form-applets__wrapper {
     position: relative;
     width: 660px;
-    padding-top: 25px;
-    padding-bottom: 56px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .form-applets__description {
     width: 380px;
     position: absolute;
     left: 21%;
-    top: 17px;
+    top: -8px;
     background-color: #ffffff;
 
     span {
@@ -121,10 +123,15 @@ input[type="radio"]:disabled + .form-applets__indicator {
 
   .form-applets__label-wrapper {
     padding-top: 52px;
-    padding-bottom: 53px;
+    padding-bottom: 18px;
     padding-left: 57px;
     margin: 0;
+    justify-content: flex-start;
     border: 2px solid #e5e5e5;
+  }
+
+  .form-applets__label {
+    margin-bottom: 36px;
   }
 
   .form-applets__text {
@@ -135,13 +142,14 @@ input[type="radio"]:disabled + .form-applets__indicator {
 @media (min-width: $desktop-width) {
   .form-applets {
     width: 470px;
-    margin-top: 29px;
+    margin-top: 53px;
     background-color: #ffffff;
   }
 
   .form-applets__wrapper {
     width: 469px;
     padding-left: 34px;
+    padding-bottom: 0;
     padding-right: 0;
   }
 
@@ -150,6 +158,12 @@ input[type="radio"]:disabled + .form-applets__indicator {
   }
 
   .form-applets__label-wrapper {
+    display: block;
     padding-left: 75px;
+    padding-bottom: 19px;
+  }
+
+  .form-applets__label {
+    margin-bottom: 36px;
   }
 }

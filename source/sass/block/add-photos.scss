@@ -27,7 +27,7 @@
 
 .add-photos__form-wrapper {
   padding-top: 42px;
-  padding-bottom: 43px;
+  padding-bottom: 40px;
 }
 
 .add-photos__list {
@@ -35,7 +35,7 @@
   margin: 0;
   padding-bottom: 50px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   list-style-type: none;
   font-size: 0;
   text-align: center;
@@ -44,6 +44,7 @@
 .add-photos__item {
   display: inline-block;
   position: relative;
+  margin-left: 33px;
 }
 
 .add-photos__icon-wrapper {
@@ -98,19 +99,20 @@
     padding-bottom: 14px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
   }
 
   .add-photos__img-wrapper {
     margin: 0;
     padding-top: 0;
-    flex-basis: 300px;
+    width: 300px;
   }
 
   .add-photos__form-wrapper {
     margin: 0;
+    margin-left: 20px;
     padding-top: 0;
-    flex-basis: 300px;
+    padding-bottom: 44px;
+    width: 300px;
   }
 
   .add-photos__img {
@@ -122,6 +124,7 @@
   }
 
   .add-photos__item {
+    margin-left: 0;
     margin-top: 15px;
     padding-top: 10px;
     padding-bottom: 17px;
@@ -168,7 +171,7 @@
 @media (min-width: $desktop-width) {
   .add-photos {
     background-color: #ffffff;
-    padding-bottom: 63px;
+    padding-bottom: 29px;
   }
 
   .add-photos__container {
@@ -194,33 +197,36 @@
   }
 
   .add-photos__form-wrapper {
-    margin-left: 63px;
+    width: 425px;
+    margin-left: 75px;
     padding-bottom: 40px;
   }
 
   .add-photos__list {
-    padding-left: 27px;
+    padding-left: 0;
+    padding-bottom: 0;
   }
 
   .add-photos__item {
     padding-top: 0;
     padding-bottom: 11px;
     padding-right: 10px;
-    margin-top: 13px;
+    margin-top: 12px;
   }
 
   .add-photos__icon-wrapper {
-    width: 50px;
-    height: 47px;
+    width: 75px;
+    height: 48px;
     margin-left: 0;
   }
 
   .add-photos__buttons {
-    padding-left: 28px;
+    padding-left: 15px;
     padding-right: 0;
-    padding-top: 95px;
+    padding-top: 0;
+    margin-top: 145px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
   .link--add-photos {
@@ -228,7 +234,7 @@
   }
 
   .add-photos__crop {
-    width: 44px;
+    width: 48px;
     height: 48px;
   }
 
@@ -238,7 +244,7 @@
   }
 
   .add-photos__contrast {
-    width: 32px;
+    width: 50px;
     height: 32px;
   }
 }

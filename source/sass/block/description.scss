@@ -11,6 +11,10 @@
   color: $main-text-color;
   box-sizing: border-box;
 
+  br {
+    display: none;
+  }
+
   span {
     display: none;
   }
@@ -31,9 +35,14 @@
 
 @media (min-width: $desktop-width) {
   .description__wrapper {
-    padding-left: 68px;
-    padding-right: 70px;
+    padding-left: 0;
+    padding-right: 0;
     padding-top: 92px;
+    margin-right: 20px;
+
+    br {
+      display: inline;
+    }
 
     span {
       display: inline;

@@ -5,7 +5,7 @@
 .achievements__wrapper {
   width: 320px;
   margin: 0 auto;
-  padding: 38px 20px 40px 20px;
+  padding: 38px 20px 0 20px;
   box-sizing: border-box;
 }
 
@@ -27,11 +27,12 @@
   min-height: 450px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .achievements__label {
   min-height: 39px;
+  margin-bottom: 43px;
   display: flex;
   align-items: center;
 }
@@ -153,9 +154,14 @@ input[type="checkbox"]:checked:disabled + .achievements__indicator::before {
 
   .achievements__label-wrapper {
     padding-left: 58px;
-    padding-top: 52px;
-    padding-bottom: 48px;
+    padding-top: 54px;
+    padding-bottom: 5px;
+    justify-content: flex-start;
     border: 2px solid #e5e5e5;
+  }
+
+  .achievements__label {
+    margin-bottom: 43px;
   }
 
   .achievements__text {
@@ -165,25 +171,29 @@ input[type="checkbox"]:checked:disabled + .achievements__indicator::before {
 
 @media (min-width: $desktop-width) {
   .achievements {
+    margin-top: 65px;
     background-color: #ffffff;
   }
 
   .achievements__wrapper {
-    width: 960px;
-    padding-right: 10px;
-    padding-left: 10px;
+    width: 940px;
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 0;
   }
 
   .achievements__description {
-    left: 27.5%;
+    width: 440px;
+    left: 26.5%;
+    top: -8px;
   }
 
   .achievements__label-wrapper {
     min-height: 163px;
-    padding-top: 53px;
+    padding-top: 7px;
     padding-left: 57px;
-    padding-right: 10px;
-    padding-bottom: 13px;
+    padding-right: 8px;
+    padding-bottom: 55px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -192,6 +202,8 @@ input[type="checkbox"]:checked:disabled + .achievements__indicator::before {
   .achievements__label {
     height: 39px;
     min-width: 260px;
+    margin-top: 44px;
+    margin-bottom: 0;
   }
 
   .achievements__shark {

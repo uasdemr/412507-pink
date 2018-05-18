@@ -5,7 +5,7 @@
 .area__wrapper {
   width: 320px;
   margin: 0 auto;
-  padding: 31px 20px 48px 20px;
+  padding: 31px 20px 49px 20px;
   box-sizing: border-box;
 }
 
@@ -35,9 +35,13 @@
 }
 
 @media (min-width: $tablet-width) {
+  .area {
+    margin-top: 66px;
+  }
+
   .area__wrapper {
     width: 660px;
-    padding-top: 25px;
+    padding-top: 0;
     position: relative;
   }
 
@@ -46,7 +50,7 @@
     left: 31%;
     width: 250px;
     right: 0;
-    top: 10px;
+    top: -15px;
     background-color: #ffffff;
   }
 
@@ -66,15 +70,20 @@
 }
 
 @media (min-width: $desktop-width) {
+  .area {
+    margin-top: 65px;
+  }
+
   .area__wrapper {
-    width: 960px;
-    padding-top: 25px;
-    padding-right: 10px;
-    padding-left: 10px;
+    width: 940px;
+    padding-top: 0;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .area__description {
-    left: 37%;
+    left: 36.6%;
+    top: -14px;
     width: 250px;
   }
 
